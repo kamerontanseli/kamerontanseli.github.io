@@ -5,6 +5,7 @@ git commit
 git push
 git push origin testing:master -f
 
+git branch -D master
 git checkout master
 git pull
 ls | grep -v www | xargs rm -r
