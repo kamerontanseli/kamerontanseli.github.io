@@ -1,4 +1,5 @@
 harp compile .
+rm www/deploy.sh
 git add -A
 git commit
 git push
