@@ -13,3 +13,4 @@ rm -r www
 git add -A
 git commit -m "deploying"
 git push -f
+git checkout -
