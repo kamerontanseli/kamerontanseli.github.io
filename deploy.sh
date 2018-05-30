@@ -3,4 +3,4 @@ rm www/deploy.sh
 git add -A
 git commit
 git push
-git push origin master:testing -f
+git push origin testing:master -f
