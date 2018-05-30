@@ -6,5 +6,5 @@ git push
 git push origin testing:master -f
 
 git checkout master
-ls | grep -v www | xarg rm -r
+ls | grep -v www | xargs rm -r
 mv www/* .
