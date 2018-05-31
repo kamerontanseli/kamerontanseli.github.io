@@ -7,27 +7,32 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link rel="stylesheet" href="/scss/main.css">
-  <% if (current.path.indexOf('posts') > -1) { %> 
-    <link rel="stylesheet" href="/scss/vendor/prism.css">
-  <% } %>
+  
 </head>
 <body>
   <header class="container">
-    <%- partial('partials/_navbar') %>
-    <% if (current.source !== 'index') { %> 
-      <%- partial('partials/_hero', { title: current.source }) %>
-    <% } else { %>
-      <%- partial('partials/_hero', { title: 'Front End Development' }) %>
-    <% } %>
+    <nav class="navbar">
+  <ul class="navbar__list">
+    <li class="navbar__list-item navbar__list-item--brand">
+      <a class="navbar__list-link" href="/">Kameron Tanseli</a>
+    </li>
+  </ul>
+</nav>
+     
+      <section class="hero">
+  <h1 class="hero__title">404</h1>
+</section>
+    
   </header>
   <main class="container">
-    <%- yield %>
+    <div class="page-404">
+  <h1>404</h1>
+  <h3>Not found</h3>
+</div>
   </main>
   <footer class="footer container">
     <p>&copy; 2018</p>
   </footer>
 </body>
-<% if (current.path.indexOf('posts') > -1) { %> 
-<script src="/js/vendor/prism.js"></script>  
-<% } %>
+
 </html>
