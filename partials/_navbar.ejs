@@ -3,17 +3,5 @@
     <li class="navbar__list-item navbar__list-item--brand">
       <a class="navbar__list-link" href="/">Kameron Tanseli</a>
     </li>
-    <li class="navbar__list-item <%- current.source === 'index' ? 'navbar__list-item--active' : '' %>">
-      <a class="navbar__list-link" href="/">Home</a>
-    </li>
-    <li class="navbar__list-item <%- current.source === 'work' ? 'navbar__list-item--active' : '' %>">
-      <a class="navbar__list-link" href="/work">Work</a>
-    </li>
-    <li class="navbar__list-item <%- current.source === 'blog' || current.path.indexOf('posts') > -1 ? 'navbar__list-item--active' : '' %>">
-      <a class="navbar__list-link" href="/blog">Blog</a>
-    </li>
-    <li class="navbar__list-item <%- current.source === 'contact' ? 'navbar__list-item--active' : '' %>">
-      <a class="navbar__list-link" href="/contact">Contact</a>
-    </li>
   </ul>
 </nav>
