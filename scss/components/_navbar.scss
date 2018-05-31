@@ -1,0 +1,59 @@
+.navbar__list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0px;
+  list-style: none;
+
+  @include mobile {
+    flex-wrap: wrap;
+    margin: 10px 0px;
+  }
+}
+
+.navbar__list-item {
+  padding: 20px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  @include mobile {
+    padding: 5px;
+
+    &:first-child {
+      padding-left: 5px;
+    }
+  
+    &:last-child {
+      padding-right: 5px;
+    }
+  }
+}
+
+.navbar__list-item--brand {
+  flex-grow: 1;
+
+  @include mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+.navbar__list-link {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.navbar__list-item--active {
+  font-weight: bold;
+  text-decoration: underline;
+}
