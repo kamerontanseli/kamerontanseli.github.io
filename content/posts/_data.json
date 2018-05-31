@@ -1,10 +1,6 @@
 {
-  "my-second-post": {
-    "title": "My second post",
-    "date": 1527715795782
-  },
-  "post-2": {
-    "title": "My third post",
-    "date": 1527715795782
+  "flow-type-checking": {
+    "title": "Flow Type Checking Tips",
+    "date": 1511827200000
   }
 }
