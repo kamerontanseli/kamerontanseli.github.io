@@ -1,9 +1,9 @@
-<%- partial('partials/_hero', { title: 'Blog' }) %>
-
-<% for (var slug in public.content.posts._data) { %>
-  <%- partial('partials/_post', {
-    slug: slug,
-    title: public.content.posts._data[slug].title,
-    date: public.content.posts._data[slug].date
-  }) %>
-<% }; %>
+<div class="posts">
+  <% for (var slug in public.content.posts._data) { %>
+    <%- partial('partials/_post', {
+      slug: slug,
+      title: public.content.posts._data[slug].title,
+      date: public.content.posts._data[slug].date
+    }) %>
+  <% }; %>
+</div>

@@ -1,0 +1,21 @@
+.posts {
+  margin-top: 20px;
+}
+
+.post {
+  padding: 20px;
+  display: inline-block;
+}
+
+.post__title {
+  margin: 0;
+}
+
+.post__title--link {
+  color: $black;
+}
+
+.post__byline {
+  margin-top: 10px;
+  margin-bottom: 0;
+}

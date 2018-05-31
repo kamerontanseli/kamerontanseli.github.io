@@ -12,6 +12,11 @@
 <body>
   <header class="container">
     <%- partial('partials/_navbar') %>
+    <% if (current.source !== 'index') { %> 
+      <%- partial('partials/_hero', { title: current.source }) %>
+    <% } else { %>
+      <%- partial('partials/_hero', { title: 'Front End Development' }) %>
+    <% } %>
   </header>
   <main class="container">
     <%- yield %>
