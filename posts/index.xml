@@ -6,10 +6,31 @@
     <description>Recent content in Posts on Kameron Tanseli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 10 Jun 2018 21:27:01 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jun 2018 21:52:57 +0100</lastBuildDate>
     
 	<atom:link href="http://kamerontanseli.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing Reusable Javascript</title>
+      <link>http://kamerontanseli.github.io/posts/writing-reusable-javascript/</link>
+      <pubDate>Sun, 10 Jun 2018 21:52:57 +0100</pubDate>
+      
+      <guid>http://kamerontanseli.github.io/posts/writing-reusable-javascript/</guid>
+      <description>Don’t reinvent the wheel, just realign it. — Anthony J. D’Ang
+ It&amp;rsquo;s the small things that count Small problems are usually overlooked by the developer, I myself have rushed and wrote sloppy functions as I had lack of care for the smaller problem.
+An example of rushing:
+$(&amp;quot;button&amp;quot;).click(function(){ var heading = $(&amp;quot;h1&amp;quot;).text(); var capital = heading[0].toUpperCase() + heading.slice(1); $(&amp;quot;h1&amp;quot;).text(capital); });  How can we improve this? Right away we can pull out the entire function so it is no longer an anonymous function, this helps when we need to debug and allows us to reuse this block of code:</description>
+    </item>
+    
+    <item>
+      <title>9 Ways to Level Up Javascript</title>
+      <link>http://kamerontanseli.github.io/posts/9-ways-to-level-up-javascript/</link>
+      <pubDate>Sun, 10 Jun 2018 21:38:37 +0100</pubDate>
+      
+      <guid>http://kamerontanseli.github.io/posts/9-ways-to-level-up-javascript/</guid>
+      <description>1. Don’t use commas when declaring variables // bad var a = 2, b = a + 2, c = b - 3; // good var a = 2; var b = a + 2; var c = b - 3;   Variables can be easily moved around from line to line without having to worry about the commas.  2. Namespace all your code // bad var fruit = &amp;quot;apple&amp;quot;; var fruit = [&amp;quot;apple&amp;quot;, &amp;quot;pear&amp;quot;]; // namespace collision // good window.</description>
+    </item>
     
     <item>
       <title>Flow Type Checking Tips</title>

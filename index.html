@@ -48,6 +48,39 @@
 <article class="post first-entry">
   <header class="post-header">
     <span class="welcome-emoji">👉</span>
+    <h2 class="post-title">Writing Reusable Javascript</h2>
+  </header>
+  <p class="post-summary">Don’t reinvent the wheel, just realign it. — Anthony J. D’Ang
+ It’s the small things that count Small problems are usually overlooked by the developer, I myself have rushed and wrote sloppy functions as I had lack of care for the smaller problem.
+An example of rushing:
+$(&#34;button&#34;).click(function(){ var heading = $(&#34;h1&#34;).text(); var capital = heading[0].toUpperCase() &#43; heading.slice(1); $(&#34;h1&#34;).text(capital); });  How can we improve this? Right away we can pull out the entire function so it is no longer an anonymous function, this helps when we need to debug and allows us to reuse this block of code:...</p>
+  <footer class="post-footer">
+    <p class="post-meta">2018.6.10</p>
+  </footer>
+  <a class="post-link" href="http://kamerontanseli.github.io/posts/writing-reusable-javascript/"></a>
+</article>
+
+
+
+
+<article class="post post-entry">
+  <header class="post-header">
+    
+    <h2 class="post-title">9 Ways to Level Up Javascript</h2>
+  </header>
+  <p class="post-summary">1. Don’t use commas when declaring variables // bad var a = 2, b = a &#43; 2, c = b - 3; // good var a = 2; var b = a &#43; 2; var c = b - 3;   Variables can be easily moved around from line to line without having to worry about the commas.  2. Namespace all your code // bad var fruit = &#34;apple&#34;; var fruit = [&#34;apple&#34;, &#34;pear&#34;]; // namespace collision // good window....</p>
+  <footer class="post-footer">
+    <p class="post-meta">2018.6.10</p>
+  </footer>
+  <a class="post-link" href="http://kamerontanseli.github.io/posts/9-ways-to-level-up-javascript/"></a>
+</article>
+
+
+
+
+<article class="post post-entry">
+  <header class="post-header">
+    
     <h2 class="post-title">Flow Type Checking Tips</h2>
   </header>
   <p class="post-summary">For the past 3 months I have been adding more Flow type checking to a codebase.
