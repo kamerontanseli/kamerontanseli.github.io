@@ -6,10 +6,21 @@
     <description>Recent content on Kameron Tanseli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 10 Jun 2018 21:52:57 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jun 2018 22:08:37 +0100</lastBuildDate>
     
 	<atom:link href="http://kamerontanseli.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Use render props to separate logic from presentation</title>
+      <link>http://kamerontanseli.github.io/posts/container-presenter/</link>
+      <pubDate>Sun, 10 Jun 2018 22:08:37 +0100</pubDate>
+      
+      <guid>http://kamerontanseli.github.io/posts/container-presenter/</guid>
+      <description>Separating logic from your presentation has always been a best practise. It enforces the single responsibility principle (SRP) and makes the feature easier to test.
+React gets in trouble for letting developers mush the two concerns together with ease. Lets take an example from the homepage to explain:
+class Timer extends React.Component { constructor(props) { super(props) this.state = { seconds: 0 } } tick() { this.setState(prevState =&amp;gt; ({ seconds: prevState.</description>
+    </item>
     
     <item>
       <title>Writing Reusable Javascript</title>

@@ -48,6 +48,23 @@
 <article class="post first-entry">
   <header class="post-header">
     <span class="welcome-emoji">👉</span>
+    <h2 class="post-title">Use render props to separate logic from presentation</h2>
+  </header>
+  <p class="post-summary">Separating logic from your presentation has always been a best practise. It enforces the single responsibility principle (SRP) and makes the feature easier to test.
+React gets in trouble for letting developers mush the two concerns together with ease. Lets take an example from the homepage to explain:
+class Timer extends React.Component { constructor(props) { super(props) this.state = { seconds: 0 } } tick() { this.setState(prevState =&gt; ({ seconds: prevState....</p>
+  <footer class="post-footer">
+    <p class="post-meta">2018.6.10</p>
+  </footer>
+  <a class="post-link" href="http://kamerontanseli.github.io/posts/container-presenter/"></a>
+</article>
+
+
+
+
+<article class="post post-entry">
+  <header class="post-header">
+    
     <h2 class="post-title">Writing Reusable Javascript</h2>
   </header>
   <p class="post-summary">Don’t reinvent the wheel, just realign it. — Anthony J. D’Ang
