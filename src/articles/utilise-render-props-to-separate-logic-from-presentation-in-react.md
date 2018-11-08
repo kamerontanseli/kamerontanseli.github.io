@@ -27,7 +27,7 @@ class Timer extends React.Component {
 
 Above you can see the rather simple Timer class. You can also see the display logic for the class is coded right into the `render()` method.
 
-The problem with having `<div>Seconds: {this.state.seconds}</div>` in the Timer class is that it’s not separating logic from presentation.
+The problem with having `<div>Seconds: {this.state.seconds}</div>` in the `Timer` class is that it’s not separating logic from presentation.
 
 Lets separate the two concerns:
 
