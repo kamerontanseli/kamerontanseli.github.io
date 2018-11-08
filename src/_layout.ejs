@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kameron Tanseli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/scss/main.css">
+  <link rel="stylesheet" href="/shared/vendor/prism.css">
+</head>
+<body>
+  <%- partial('./shared/components/_navbar.ejs') %>
+  <div class="container">
+    <%- yield %>
+  </div>
+</body>
+<script src="/shared/vendor/prism.js"></script>
+</html>

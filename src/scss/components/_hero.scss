@@ -1,0 +1,25 @@
+.hero {
+  margin-bottom: 60px;
+}
+
+.hero-title {
+ font-size: 2em; 
+ font-weight: bold;
+ margin-top: 0;
+ margin-bottom: 20px;
+}
+
+.hero-content {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: normal;
+  > a {
+    color: #acb7c4;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
