@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kameron Tanseli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/scss/main.css">
+  <link rel="stylesheet" href="/shared/vendor/prism.css">
+</head>
+<body>
+  <div class="navbar">
+  <div class="navbar-items container">
+    <div class="navbar-logo"><a href="/">📝 Kameron Tanseli</a></div>
+    <div class="navbar-item"><a href="/">Articles</a></div>
+  </div>
+</div>
+
+  <div class="container">
+    <h1>Utilise render props to separate logic from presentation in React</h1><p>Separating logic from your presentation has always been a best practise. It enforces the <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">single responsibility principle (SRP)</a> and makes the code easier to test.</p>
+<p>React however gets in trouble for letting developers mush the two concerns together with ease. Lets take an example from the <a href="https://reactjs.org/">homepage</a> to explain:</p>
+<pre><code class="language-javascript">class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { seconds: 0 };
+  }
+  tick() {
+    this.setState(prevState =&gt; ({ seconds: prevState.seconds + 1 }));
+  }
+  componentDidMount() {
+    this.interval = setInterval(() =&gt; this.tick(), 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+  render() {
+    return &lt;div&gt;Seconds: {this.state.seconds}&lt;/div&gt;;
+  }
+}</code></pre>
+<p>Above you can see the rather simple Timer class. You can also see the display logic for the class is coded right into the <code>render()</code> method.</p>
+<p>The problem with having <code>&lt;div&gt;Seconds: {this.state.seconds}&lt;/div&gt;</code> in the Timer class is that it’s not separating logic from presentation.</p>
+<p>Lets separate the two concerns:</p>
+<pre><code class="language-javascript">const SecondsActive = ({ seconds }) =&gt; &lt;div&gt;Seconds: {seconds}&lt;/div&gt;;
+
+class TimerContainer extends React.Component {
+  state = { seconds: 0 };
+  tick() {
+    this.setState(({ seconds }) =&gt; ({ seconds: seconds + 1 }));
+  }
+  componentDidMount() {
+    this.interval = setInterval(() =&gt; this.tick(), 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+  render() {
+    return this.props.view({ seconds: this.state.seconds });
+  }
+}
+
+ReactDOM.render(
+  &lt;TimerContainer view={SecondsActive} /&gt;,
+  document.getElementById(&quot;app&quot;)
+);</code></pre>
+<p>With a simple switch to rendering via a prop we have made the <code>Timer</code> class reusable across many presentational components and have made the presentational component super easy to test!</p>
+  </div>
+</body>
+<script src="/shared/vendor/prism.js"></script>
+</html>

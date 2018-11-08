@@ -9,9 +9,15 @@
   <link rel="stylesheet" href="/shared/vendor/prism.css">
 </head>
 <body>
-  <%- partial('./shared/components/_navbar.ejs') %>
+  <div class="navbar">
+  <div class="navbar-items container">
+    <div class="navbar-logo"><a href="/">📝 Kameron Tanseli</a></div>
+    <div class="navbar-item"><a href="/">Articles</a></div>
+  </div>
+</div>
+
   <div class="container">
-    <%- yield %>
+    
   </div>
 </body>
 <script src="/shared/vendor/prism.js"></script>
