@@ -1,4 +1,8 @@
 {
+  "rules-of-reusable-components": {
+    "title": "The rules of reusable components",
+    "date": "11/10/2018"
+  },
   "utilise-render-props-to-separate-logic-from-presentation-in-react": {
     "title": "Use render props to separate logic from view in React",
     "date": "06/10/2018"

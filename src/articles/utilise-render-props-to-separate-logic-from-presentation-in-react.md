@@ -4,7 +4,7 @@ Separating logic from your presentation has always been a best practise. It enfo
 
 React however gets in trouble for letting developers mush the two concerns together with ease. Lets take an example from the [homepage](https://reactjs.org/) to explain:
 
-```javascript
+```jsx
 class Timer extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +31,7 @@ The problem with having `<div>Seconds: {this.state.seconds}</div>` in the `Timer
 
 Lets separate the two concerns:
 
-```javascript
+```jsx
 const SecondsActive = ({ seconds }) => <div>Seconds: {seconds}</div>;
 
 class TimerContainer extends React.Component {
