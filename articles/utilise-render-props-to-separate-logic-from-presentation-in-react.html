@@ -17,7 +17,7 @@
 
   <div class="container"> <h1>Utilise render props to separate logic from presentation in React</h1><p>Separating logic from your presentation has always been a best practise. It enforces the <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">single responsibility principle (SRP)</a> and makes the code easier to test.</p>
 <p>React however gets in trouble for letting developers mush the two concerns together with ease. Lets take an example from the <a href="https://reactjs.org/">homepage</a> to explain:</p>
-<pre><code class="language-javascript">class Timer extends React.Component {
+<pre><code class="language-jsx">class Timer extends React.Component {
   constructor(props) {
     super(props);
     this.state = { seconds: 0 };
@@ -38,7 +38,7 @@
 <p>Above you can see the rather simple Timer class. You can also see the display logic for the class is coded right into the <code>render()</code> method.</p>
 <p>The problem with having <code>&lt;div&gt;Seconds: {this.state.seconds}&lt;/div&gt;</code> in the <code>Timer</code> class is that it’s not separating logic from presentation.</p>
 <p>Lets separate the two concerns:</p>
-<pre><code class="language-javascript">const SecondsActive = ({ seconds }) =&gt; &lt;div&gt;Seconds: {seconds}&lt;/div&gt;;
+<pre><code class="language-jsx">const SecondsActive = ({ seconds }) =&gt; &lt;div&gt;Seconds: {seconds}&lt;/div&gt;;
 
 class TimerContainer extends React.Component {
   state = { seconds: 0 };
