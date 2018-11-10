@@ -6,6 +6,8 @@ This means during development I tend to extract UI components that are placed in
 
 These components are reused throughout the entire project. Often having different styles or layouts when integrated into features.
 
+Along the way I learnt a few rules that helped me save time and pain.
+
 ## 1. Keep the layout fluid
 
 I can't count the amount of times a component has had a fixed width and that has affected a responsive design. Meaning I have to go in and fiddle with the existing props that were set up in place for another feature somewhere in the site. Not good.
