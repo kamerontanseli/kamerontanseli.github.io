@@ -23,6 +23,17 @@ a {
   color: #5f9ea0;
 }
 
+blockquote {
+  margin-left: 0;
+  font-style: italic;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+blockquote p {
+  margin: 0;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -58,7 +69,7 @@ a:hover {
 }
 
 .posts {
-  list-style: none; 
+  list-style: none;
   margin: 0;
   padding: 0;
 }
