@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-Black.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-Black.woff') format('woff'),
+         url('/css/fonts/PublicSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-BlackItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-BlackItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-Bold.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-Bold.woff') format('woff'),
+         url('/css/fonts/PublicSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-BoldItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-BoldItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-ExtraBold.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-ExtraBold.woff') format('woff'),
+         url('/css/fonts/PublicSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-ExtraBoldItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-ExtraBoldItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-Medium.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-Medium.woff') format('woff'),
+         url('/css/fonts/PublicSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-MediumItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-MediumItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-SemiBold.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-SemiBold.woff') format('woff'),
+         url('/css/fonts/PublicSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-SemiBoldItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-SemiBoldItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-ExtraLight.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-ExtraLight.woff') format('woff'),
+         url('/css/fonts/PublicSans-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-ExtraLightItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-ExtraLightItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-Light.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-Light.woff') format('woff'),
+         url('/css/fonts/PublicSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-LightItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-LightItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-Regular.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-Regular.woff') format('woff'),
+         url('/css/fonts/PublicSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-Italic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-Italic.woff') format('woff'),
+         url('/css/fonts/PublicSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-Thin.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-Thin.woff') format('woff'),
+         url('/css/fonts/PublicSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Public Sans webfont';
+    src: url('/css/fonts/PublicSans-ThinItalic.woff2') format('woff2'),
+         url('/css/fonts/PublicSans-ThinItalic.woff') format('woff'),
+         url('/css/fonts/PublicSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
