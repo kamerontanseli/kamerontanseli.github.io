@@ -14,89 +14,59 @@ body {
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+html {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 .container {
   max-width: 38rem;
   padding: 2rem;
   margin: auto;
 }
 
-.title {
-  font-size: 4em;
-  margin-top: 0;
-  margin-bottom: 20px;
+.list {
+  list-style: none;
+  padding-left: 0;
 }
 
-@media screen and (max-width: 600px) {
-  .title {
-    font-size: 2em;
-  }
+.list__item {
+  font-size: 0.8rem;
+  margin-bottom: 7px;
 }
 
-a {
-  text-decoration: none;
-  background: linear-gradient(to right, #ffec3d66, #ffec3de6);
-  background-size: 300% 40%;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-  transition-property: background-position;
-  transition-duration: 300ms;
+.list__link, .nav__link {
+  text-decoration: underline;
   padding: 0;
   font-weight: 300;
   color: #000;
 }
 
-p {
-  line-height: 1.5em;
-  font-weight: 200;
+.nav {
+  margin-top: 40px;
+  padding-left: 0;
+  list-style: none;
 }
 
-@media screen and (max-width: 600px) {
-  p, article p, article li {
-    font-size: 0.9em;
-  }
-}
-
-hr {
-  margin: 40px 0;
-  border-style: dashed;
-  color: #ddd;
-  border-width: 0.5px;
+.nav__item {
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 0.8rem;
 }
 
 article h1 {
-  text-align: center;
-  font-size: 4em;
-  margin-bottom: 20px;
-  margin-top: 0;
+  font-size: 2rem;
+  font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
 }
 
-@media screen and (max-width: 600px) {
-  article h1 {
-    font-size: 2em;
-  }
-}
-
-article h2 {
-  font-size: 2em;
-  font-weight: 500;
-  margin: 20px 0;
-  margin-top: 40px;
-}
-
-@media screen and (max-width: 600px) {
-  h2, article h2 {
-    font-size: 1.2em;
-  }
-}
-
-
-article ul, article ol {
-  padding-left: 31px;
-}
-
-article li {
-  margin: 10px 0;
-  line-height: 1.5em;
-  font-weight: 200;
-  margin-left: -2px;
+article p {
+  line-height: 1.8rem;
+  font-family: serif;
+  font-size: 1.1rem;
+  font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
 }
