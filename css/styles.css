@@ -81,6 +81,10 @@ article h1 {
   font-size: 2rem;
 }
 
+article h2 {
+  line-height: 2em;
+}
+
 article p, article li {
   line-height: 1.8rem;
   font-family: serif;
@@ -88,7 +92,7 @@ article p, article li {
 }
 
 article a {
-  color: #9C27B0;
+  color: #008b8b;
 }
 
 @media screen and (max-width: 480px) {
