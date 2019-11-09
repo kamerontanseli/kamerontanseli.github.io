@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kameron Tanseli</title><link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;display=swap" rel="stylesheet"><link href="/assets/solarized-light.css" rel="stylesheet"><link href="/assets/site.css" rel="stylesheet"></head><body><main><h1>The rules of reusable components</h1><p>I spend a lot of my time developing new reusable UI components.</p>
+<p>This means during development I tend to extract UI components that are placed in a shared library or styleguide.
+These components are reused throughout the entire project. Often having different styles or layouts when integrated into features.</p>
+<p>Along the way I learnt a few rules that helped me save time and pain.</p>
+<h2>1. Keep the layout fluid</h2><p>I can’t count the amount of times a component has had a fixed width and that has affected a responsive design. Meaning I have to go in and fiddle with the existing props that was set up in place for another feature somewhere in the site. Not good.</p>
+<p>By keeping the component 100% width you pass the layout responsibility up to the parent component.</p>
+<p>For example it’s a lot easier to use <code>CardOne</code> over <code>CardTwo</code>. As <code>CardOne</code> will respond to the parent&#39;s column changes when the screen size changes.</p>
+<pre><code class="language-javascript">const CardOne = ({ title }) =&gt; (
+  &lt;div style={{ 
+    padding: &quot;20px 30px&quot;, 
+    background: &quot;white&quot; 
+  }}&gt;{title}&lt;/div&gt;
+);
+
+const CardTwo = ({ title }) =&gt; (
+  &lt;div style={{ 
+    width: 600, 
+    padding: &quot;10px&quot;,
+    background: &quot;white&quot; 
+  }}&gt;
+    {title}
+  &lt;/div&gt;
+);
+
+const App = () =&gt; (
+  &lt;div className=&quot;row&quot;&gt;
+    &lt;div className=&quot;col-md-6&quot;&gt;
+      &lt;CardOne title=&quot;I&#39;m Fluid&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div className=&quot;col-md-6&quot;&gt;
+      &lt;CardTwo title=&quot;I will break this layout&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+);</code></pre>
+<h2>2. Allow extra props to be passed</h2><p>Turns out that your Button component needs a specific data attribute to work with the library you’re using for one of the specific features. Too bad that the <code>Button</code> component only allows <code>className</code>, <code>children</code> and <code>onClick</code>.</p>
+<p>How can we fix this?</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">Modern ES6 JavaScript allows you to spread function parameters and objects.</a> This can be used to feed props to components.</p>
+<pre><code class="language-javascript">// Before -&gt; &lt;button className=&quot;button&quot;&gt;Click me&lt;/button&gt;
+
+const Button = ({ children, className, onClick }) =&gt; (
+  &lt;button 
+    onClick={onClick} 
+    className={`${styles.button} ${className || &quot;&quot;}`}&gt;
+    {children}
+  &lt;/button&gt;
+);
+
+// After -&gt; &lt;button className=&quot;button&quot; data-theme=&quot;dark&quot;&gt;Click me&lt;/button&gt;
+
+const Button = ({ className, ...props }) =&gt; (
+  &lt;button 
+    className={`${styles.button} ${className || &quot;&quot;}`} 
+    {...props} /&gt;
+);
+
+// Example
+
+const App = ({ onActivate }) =&gt; (
+  &lt;SpecificFeature&gt;
+    &lt;Button data-theme=&quot;dark&quot; onClick={onActivate}&gt;
+      Click me
+    &lt;/Button&gt;
+  &lt;/SpecificFeature&gt;
+);</code></pre>
+<h2>3. Push logic upwards / Keep it dumb</h2><p>One of the top things that prevents reusability is when stateful logic specific to a feature is implemented within a reusable component.</p>
+<p>Imagine you have a <code>Dropdown</code> component. That you have used in your navigation when a link is clicked.</p>
+<pre><code class="language-javascript">const DropdownItem = ({ className, ...props }) =&gt; (
+  &lt;li className={`dropdown-item ${className || &quot;&quot;}`} {...props} /&gt;
+);
+
+class Dropdown extends React.Component {
+  state = { toggled: false };
+  toggle = () =&gt; this.setState(state =&gt; ({ toggled: !state.toggled }));
+  render() {
+    return (
+      &lt;div className=&quot;navbar-link&quot;&gt;
+        &lt;span onClick={this.toggle}&gt; {this.props.title} &lt;/span&gt;
+        {this.state.toggled &amp;&amp; (
+          &lt;ul className=&quot;dropdown&quot;&gt; {this.props.children} &lt;/ul&gt;
+        )}
+      &lt;/div&gt;
+    );
+  }
+}
+
+const Navbar = () =&gt; (
+  &lt;div className=&quot;navbar&quot;&gt;
+    &lt;div className=&quot;navbar-brand&quot;&gt;Example&lt;/div&gt;
+    &lt;ul className=&quot;navbar-menu&quot;&gt;
+      &lt;Dropdown title=&quot;My Account&quot;&gt;
+        &lt;DropdownItem&gt;One&lt;/DropdownItem&gt;
+        &lt;DropdownItem&gt;Two&lt;/DropdownItem&gt;
+      &lt;/Dropdown&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+);</code></pre>
+<p>The problem above is:</p>
+<ol>
+<li><p><code>Dropdown</code> handles the logic for opening and closing the dropdown. Making it a lot harder to reuse <code>Dropdown</code> for more complicated scenarios (e.g: only open the dropdown when a request is successful).</p>
+</li>
+<li><p><code>Dropdown</code> has markup that relates to the <code>Navbar</code> component.</p>
+</li>
+</ol>
+<p>If we refactor the <code>Dropdown</code> component to push the logic up. We end up with a much more reusable <code>Dropdown</code> component.</p>
+<pre><code class="language-javascript">const DropdownItem = ({ className, ...props }) =&gt; (
+  &lt;li className={`dropdown-item ${className || &quot;&quot;}`} {...props} /&gt;
+);
+
+const Dropdown = ({ className, ...props }) =&gt; (
+  &lt;ul className={`dropdown ${className || &quot;&quot;}`} {...props} /&gt;
+);
+
+class Navbar extends React.Component {
+  state = { showUserOptions: false };
+
+  toggleOptions = () =&gt; {
+    this.setState(state =&gt; ({
+      showUserOptions: !state.showUserOptions
+    }));
+  }
+
+  render() {
+    return (
+      &lt;div className=&quot;navbar&quot;&gt;
+        &lt;div className=&quot;navbar-brand&quot;&gt;Example&lt;/div&gt;
+        &lt;ul className=&quot;navbar-menu&quot;&gt;
+          &lt;div className=&quot;navbar-link&quot;&gt;
+            &lt;span onClick={this.toggleOptions}&gt;My Account&lt;/span&gt;
+            {this.state.showUserOptions &amp;&amp; (
+              &lt;Dropdown&gt;
+                &lt;DropdownItem&gt;One&lt;/DropdownItem&gt;
+                &lt;DropdownItem&gt;Two&lt;/DropdownItem&gt;
+              &lt;/Dropdown&gt;
+            )}
+          &lt;/div&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    );
+  }
+}</code></pre>
+<h2>Summary</h2><ul>
+<li>Keep the component layout fluid.</li>
+<li>Allows extra props to be passed into the component.</li>
+<li>Keep logic out of them as much as possible.</li>
+</ul></main></body><script src="/assets/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>
