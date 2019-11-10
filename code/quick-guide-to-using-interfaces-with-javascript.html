@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kameron Tanseli</title><link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;display=swap" rel="stylesheet"><link href="/assets/solarized-light.css" rel="stylesheet"><link href="/assets/site.css" rel="stylesheet"></head><body><main><h1>Quick Guide to using interfaces with JavaScript</h1><p><em>I wrote this article back in 2016 and a lot has changed since. Because of this shift I have decided to remove certain sections that are no longer considered best practises or are based on ES5 APIs. Enjoy :)</em></p>
+<p>Interfaces are great for when you need to enforce some rules about how a developer builds a class. For example we have a Form class, this class is composed of lots of Fields/Inputs. Instead of writing logic to handle all different types of inputs we can define a common interface between them all.</p>
+<p>Our Interface will contain a <code>render()</code> method to render out the input and a <code>value()</code> method to get the input’s value.</p>
+<pre><code class="language-javascript">const required = () =&gt; {
+  throw new Error(&quot;Implement!&quot;);
+};
+
+class InputInterface {
+  render = required;
+  value = required;
+}</code></pre>
+<p>We can apply the Interface to a Base Input class so that all of our derived classes have the Interface.</p>
+<pre><code class="language-javascript">class Input extends InputInterface {}</code></pre>
+<p>Now whenever you call <code>render()</code> you will get an Implementation Error. This forces the developer to override the Base class’s methods. Thus you have forced them to implement the interface.</p>
+<pre><code class="language-javascript">class Checkbox extends Input {
+  constructor () {
+    this.$el = $(&quot;&lt;input/&gt;&quot;, { type: &quot;checkbox&quot; }); 
+  }
+  render () {
+    return this.$el;
+  }
+  value () {
+    return this.$el.prop(&quot;checked&quot;);
+  }
+}</code></pre></main></body><script src="/assets/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

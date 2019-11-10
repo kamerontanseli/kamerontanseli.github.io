@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kameron Tanseli</title><link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;display=swap" rel="stylesheet"><link href="/assets/solarized-light.css" rel="stylesheet"><link href="/assets/site.css" rel="stylesheet"></head><body><main><h1>Writing reusable JavaScript (Revised)</h1><blockquote>
+<p>Don’t reinvent the wheel, just realign it. — Anthony J. D’Angelo</p>
+</blockquote>
+<p>Note from the author:</p>
+<p><em>I wrote this article back in 2016 and a lot has changed since. Because of this shift I have decided to remove certain sections that are no longer considered best practises or are based on ES5 APIs. Enjoy :)</em></p>
+<h2>It is the small things that count</h2><p>Small problems are usually overlooked by the developer, I myself have rushed and wrote sloppy functions as I had lack of care for the smaller problem.</p>
+<p>An example of rushing:</p>
+<pre><code class="language-javascript">$(&quot;button&quot;).click(() =&gt; {
+  const heading = $(&quot;h1&quot;).text();
+  const capital = heading[0].toUpperCase() + heading.slice(1);
+  $(&quot;h1&quot;).text(capital);
+});</code></pre>
+<p>How can we improve this? Right away we can pull out the entire function so it is no longer an anonymous function which allows us to reuse this block of code:</p>
+<pre><code class="language-javascript">const capitalizeHeading = () =&gt; {
+  const heading = $(&quot;h1&quot;).text();
+  const capital = heading[0].toUpperCase() + heading.slice(1);
+  $(&quot;h1&quot;).text(capital);
+};
+
+$(&quot;button&quot;).click(capitalizeHeading);</code></pre>
+<p>Lets make this even more useful and extract the capitalizing logic:</p>
+<pre><code class="language-javascript">const capitalize = (word = &quot;&quot;) =&gt; word[0].toUpperCase() + word.slice(1);
+
+const capitalizeHeading = () =&gt; {
+  const heading = $(&quot;h1&quot;).text();
+  $(&quot;h1&quot;).text(capitalize(heading));
+};
+
+$(&quot;button&quot;).click(capitalizeHeading);</code></pre>
+<p>Now we can reuse the capitalizing logic across our program.</p>
+<p>Did you know that <a href="https://github.com/jquery/jquery/blob/master/src/core.js#L34">jQuery constructs a new Object and queries the DOM every time you call <code>$(&lt;selector&gt;)</code>?</a>. We should cache jQuery objects in order to speed up execution times:</p>
+<pre><code class="language-javascript">const capitalize = (word = &quot;&quot;) =&gt; word[0].toUpperCase() + word.slice(1);
+
+const capitalizeHeading = () =&gt; {
+  const $h1 = $(&quot;h1&quot;); // cache h1 in a variable
+  $h1.text(capitalize($h1.text())); // reuse without creating
+};
+
+$(&quot;button&quot;).click(capitalizeHeading);</code></pre>
+<p><code>capitalizeHeading()</code> is okay for this one use case but it would be much more useful if it accepted a parameter to indicate what elements to capitalize:</p>
+<pre><code class="language-javascript">const capitalize = (word = &quot;&quot;) =&gt; word[0].toUpperCase() + word.slice(1);
+
+const capitalizeElement = element =&gt; () =&gt;
+  element.text(capitalize(element.text()));
+
+$(&quot;button&quot;).click(capitalizeElement($(&quot;h1&quot;)));</code></pre>
+<p>We can also wrap the execution in another function in order to create a partial. This is a function which has its arguments preloaded before execution, in this case we have made the element parameter a <code>$(“h1”)</code>.</p>
+<p>Turning <code>capitalizeHeading</code> into <code>capitalizeElement(&lt;element&gt;)</code> allows us to reuse that function for any element we wish to capitalize:</p>
+<pre><code class="language-javascript">capitalizeElement($(&quot;h2&quot;));
+capitalizeElement($(&quot;div[data-title]&quot;));</code></pre></main></body><script src="/assets/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>

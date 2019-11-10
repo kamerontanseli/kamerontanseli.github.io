@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kameron Tanseli</title><link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;display=swap" rel="stylesheet"><link href="/assets/solarized-light.css" rel="stylesheet"><link href="/assets/site.css" rel="stylesheet"></head><body><main><h1>9 ways to level up your JavaScript code</h1><p><em>I wrote this article back in 2016 and a lot has changed since. Because of this shift I have decided to remove certain sections that are no longer considered best practises or are based on ES5 APIs. Enjoy :)</em></p>
+<h2>1. Don’t use commas when declaring variables</h2><p>The variables can now be easily moved around from line to line without having to worry about the commas.</p>
+<pre><code class="language-javascript">let a = 2,
+  b = a + 2,
+  c = b - 3;
+
+let a = 2;
+let b = a + 2;
+let c = b - 3;</code></pre>
+<h2>2. Move code into separate modules</h2><p>Before:</p>
+<pre><code class="language-javascript">class Stock {
+  checkItemIsInStock(item) {
+    // logic
+  }
+}
+
+class Basket {
+  constructor() {
+    this.stock = new Stock();
+    this.items = [];
+  }
+  addToBasket(item) {
+    if (this.stock.checkItemIsInStock(item)) {
+      this.items.push(item);
+    }
+  }
+}</code></pre>
+<p>After:</p>
+<pre><code class="language-javascript">import Stock from &quot;./stock&quot;;
+import Basket from &quot;./basket&quot;;
+
+const shoppingCart = new Basket(new Stock());</code></pre>
+<h2>3. Utilize the Module pattern</h2><p>The closure created by the <a href="https://ultimatecourses.com/blog/mastering-the-module-pattern">Immediately Invoked Function Expression (IIFE)</a> allows privacy. E.g: The <code>privateMethod()</code> is only accessible by the inner <code>Basket</code> class:</p>
+<pre><code class="language-javascript">const Basket = (() =&gt; {
+  // encapsulate a private function
+  const privateMethod = () =&gt; true;
+
+  class Basket {
+    publicMethod() {
+      privateMethod(); // use private methods
+    }
+  }
+
+  return Basket;
+})();</code></pre>
+<h2>4. Comment your code</h2><pre><code class="language-javascript">/**
+ * Creates a Point to be used in D3
+ * @class Point
+ * @example
+ * new Point(2, 3);
+ */
+class Point {
+  /**
+   * @constructor
+   * @param {number} x - The x value.
+   * @param {number} y - The y value.
+   * @returns {Point} new instance of Point
+   */
+  constructor(x, y) {
+    // ...
+  }
+}</code></pre>
+<p>This allows developers to get a deeper understanding of what is happening in your code without having to figure it out from the code. If you use <a href="http://usejsdoc.org/about-getting-started.html">JSDOC</a> the comments can be used to generate online documentation guides.</p>
+<h2>5. Learn design patterns</h2><ul>
+<li><p><a href="http://www.dofactory.com/javascript/observer-design-pattern">The Observer pattern</a> helps your modules communicate to each other through events thus providing loose coupling in your app.</p>
+</li>
+<li><p><a href="http://www.dofactory.com/javascript/mediator-design-pattern">The Mediator pattern</a> takes control over a group of objects by encapsulating how these objects interact. E.g: a basket that handles items.</p>
+</li>
+<li><p><a href="http://www.dofactory.com/javascript/iterator-design-pattern">The Iterator pattern</a> is the underlying pattern for ES2015 generators.</p>
+</li>
+<li><p><a href="http://www.dofactory.com/javascript/facade-design-pattern">The Facade pattern</a> provides an simple interface which encapsulates the end user from complex functionality. E.g: Email module with simple methods such as start, stop and pause;</p>
+</li>
+</ul>
+<p>Not only are these solutions to commonly solved problems, they are a way of describing application structure to other developers fairly simply. E.g: <em>“The basket module is a mediator for all the store items, it communicates to the payment module via an observer”</em>.</p>
+<h2>6. Pass objects into functions with a large number of arguments</h2><pre><code class="language-javascript">// not so good
+function colorWidget(
+  element,
+  colorValue,
+  colorRange,
+  colorFormat,
+  opacity,
+  onChange
+) {}
+
+colorWidget($(&quot;&lt;div/&gt;&quot;), &quot;#fff&quot; /*...*/);
+
+// way better
+function colorWidget({
+  element = $(&quot;&lt;div/&gt;&quot;),
+  colorValue = &quot;#000&quot;,
+  colorRange = [0, 255],
+  colorFormat = &quot;rgb&quot;,
+  opacity = 0.8,
+  onChange = () =&gt; {}
+}) {
+  // ...
+}
+colorWidget({
+  element: $(&quot;&lt;div/&gt;&quot;)
+});</code></pre>
+<ol>
+<li>Simple to add new options</li>
+<li>The developer doesn’t have to worry about the order of the arguments</li>
+<li>Simple to add default values</li>
+</ol>
+<h2>7. Don’t use type constructors unless specifically necessary</h2><pre><code class="language-javascript">// Before
+const x1 = new Object();
+const x2 = new String();
+const x3 = new Number();
+const x4 = new Boolean();
+const x5 = new Array();
+const x6 = new RegExp(&quot;()&quot;);
+const x7 = new Function();
+
+// After
+const x1 = {};           
+const x2 = &quot;&quot;;           
+const x3 = 0;            
+const x4 = false;        
+const x5 = [];           
+const x6 = /()/;         
+const x7 = function(){};</code></pre>
+<p>The creation through type constructors is significantly slower than primitives. Also because the end result of the constructor is an <code>Object</code> rather than a primitive value you get <a href="http://stackoverflow.com/questions/5750656/whats-the-point-of-new-stringx-in-javascript">nasty side effects</a> like so:</p>
+<pre><code class="language-javascript">const a = new String(&quot;x&quot;);
+a === &quot;x&quot;  //false
+a == &quot;x&quot; //true
+
+const b = &quot;dog&quot;;
+b.woof = true;
+b.woof; // undefined
+
+const c = new String(&quot;dog&quot;);
+c.woof = true;
+c.woof; // true</code></pre>
+<h2>8. Make sure your context is right</h2><pre><code class="language-javascript">class Button {
+  constructor () {
+    this.count = 0;
+  }
+  click () {
+    this.count += 1;
+  }
+  init () {
+    $(&quot;button&quot;).click(this.click);
+  }
+}</code></pre>
+<p>From a glance this should work however when a user clicks the button we will get an error that count doesn’t exist. This is because the click function is executed in the context of the <code>$(&quot;button&quot;)</code> element instead of the <code>Button</code> object. We can fix this by binding the context to the function:</p>
+<pre><code class="language-javascript">class Button {
+  constructor () {
+    this.count = 0;
+  }
+  click () {
+    this.count += 1;
+  }
+  init () {
+    $(&quot;button&quot;).click(() =&gt; this.click());
+    // or using bind
+    $(&quot;button&quot;).click(this.click.bind(this));
+  }
+}</code></pre>
+<h2>9. Apply</h2><blockquote>
+<p>The <code>apply()</code> method calls a function with a given this <code>value</code> and <code>arguments</code> provided as an array (or <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects">an array-like object</a>). — MDN</p>
+</blockquote>
+<p>Some useful instances of using apply:</p>
+<pre><code class="language-javascript">// emulating &quot;super&quot; in an constructor 
+SomeConstructor.prototype.somemethod.apply(this, arguments);
+
+// passing an array of promises to jQuery.when
+$.when.apply($, [$.get(), $.get()]);
+
+// finding the max number in an array
+Math.max.apply(Math.max, [1,2,3,4,5]);</code></pre>
+<h2>Bonus Points</h2><p>Contributed by: <a href="https://medium.com/@russleyshaw">Russley Shaw</a></p>
+<h2>10. Use let and const over var</h2><p><code>let</code> allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used.</p>
+<p>Lets look at a few use cases where this is useful over <code>var</code> statements:</p>
+<pre><code class="language-javascript">var elements = document.querySelectorAll(&#39;p&#39;);
+for (var i = 0; i &lt; elements.length; i++) {                                 
+    // have to wrap in IIFE other i would be elements.length
+    (function(count){  
+       elements[count].addEventListener(&#39;click&#39;, function(){
+           elements[count + 1].remove();
+       });
+     })(i);
+}
+
+// using let
+let elements = document.querySelectorAll(&#39;p&#39;);
+for (let i = 0; i &lt; elements.length; i++) {
+   elements[i].addEventListener(&#39;click&#39;, function(){
+        elements[i + 1].remove();
+   });
+}</code></pre>
+<p>The reason why the top example would be <code>elements.length</code> is because <code>i</code> is referenced directly so on the next iteration <code>i</code> is incremented. When we wrap the code in an IIFE we reference <code>i</code> under the parameter <code>count</code> thus removing the direct reference.</p>
+<p><code>const</code> allows the declaration of variables that cannot be re referenced. This is useful for declaring constants (the keyword originates from it).</p>
+<pre><code class="language-javascript">const API_KEY = &#39;2rh8ruberigub38rt4tu4t4&#39;;
+const PI = 3.14;</code></pre>
+<p>However objects and arrays can still be accessed and changed. To stop this use <code>Object.freeze()</code>:</p>
+<pre><code class="language-javascript">const API_CONFIG = Object.freeze({
+  &#39;key&#39;: &#39;8ry4iuggi4g38430t5485jmub&#39;,
+  &#39;endpoint&#39;: &#39;/some/boring/api/path/&#39;
+});
+API_CONFIG.key = null; // attempt to change
+API_CONFIG.key; //= &#39;8ry4iuggi4g38430t5485jmub&#39;
+
+const EVENS = Object.freeze([ 2, 4, 6, 8]);
+EVENS[2] = 9;
+EVENS[2]; //= 6</code></pre>
+<h2>11. Avoid using “or” when referencing variables</h2><p>The only reason to avoid doing this is when the variable is allowed to be <code>false</code> . Take a look at the example below:</p>
+<pre><code class="language-javascript">let msg = &#39;&#39;; //= should hide the button
+let btnMsg = msg || &#39;Click Me&#39;;
+
+btnMsg; //= &#39;Click Me&#39;</code></pre>
+<p>The reason this happens is due to the conversion of the <code>&quot;”</code> into a Boolean which returns false . As the <code>&quot;”</code> is counted as <code>false</code> the <code>or</code> comparison returns the other side <code>&#39;Click Me&#39;</code>.</p>
+<p>If you want to have shorthand if statements you can use the ternary operator:</p>
+<pre><code class="language-javascript">var msg = &#39;&#39;; //= should hide the button
+var btnMsg = msg.length &lt; 5 ? msg : &#39;Click Me&#39;;
+
+btnMsg; //= &#39;&#39;</code></pre></main></body><script src="/assets/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></html>
