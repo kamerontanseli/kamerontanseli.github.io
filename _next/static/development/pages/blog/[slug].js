@@ -33716,7 +33716,7 @@ function SEO(_ref) {
     __self: this
   }), __jsx("meta", {
     property: "og:image",
-    content: post.hero_image,
+    content: "https://kamerontanseli.github.io/".concat(post.hero_image.replace('../', '')),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
