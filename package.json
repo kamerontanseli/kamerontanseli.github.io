@@ -10,7 +10,7 @@
     "build": "next build src",
     "start": "next start src",
     "export": "next export src",
-    "deploy": "npm run build && npm run export"
+    "deploy": "npm run build && npm run export && touch src/out/.nojekyll && gh-pages --dist src/out --branch master"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
