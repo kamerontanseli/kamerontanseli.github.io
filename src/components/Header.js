@@ -1,23 +1,22 @@
 import Link from "next/link";
 
 export default function Header(props) {
+  const isInfo =
+    typeof window !== "undefined" && window.location.pathname == "/info";
+
   return (
     <header className="header">
-      <nav
-        className="nav"
-        role="navigation"
-        aria-label="main navigation"
-      >
+      <nav className="nav" role="navigation" aria-label="main navigation">
         <Link href="/">
-          <h1>{props.siteTitle}</h1>
+          <a href="/">
+            <h1>{props.siteTitle}</h1>
+          </a>
         </Link>
         <div>
-          <Link href={`${typeof window !== "undefined" &&
-          window.location.pathname == "/info" ?
-          "/" : "/info"}`}>
-            <h1>{`${typeof window !== "undefined" &&
-          window.location.pathname == "/info" ?
-          "close" : "info"}`}</h1>
+          <Link href={`${isInfo ? "/" : "/info"}`}>
+            <a href={`${isInfo ? "/" : "/info"}`}>
+              <h1>{`${isInfo ? "close" : "info"}`}</h1>
+            </a>
           </Link>
         </div>
       </nav>
@@ -59,4 +58,3 @@ export default function Header(props) {
     </header>
   );
 }
-
