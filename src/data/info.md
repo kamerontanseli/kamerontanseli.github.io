@@ -1,11 +1,11 @@
 ---
 title: info page
-background_color: '#AEC4BE'
+background_color: '#7ea299'
 ---
-## This blog was created using [TinaCMS](https://tinacms.org) & [NextJS](https://nextjs.org/) 
+## This blog was created using [NextJS](https://nextjs.org/) 
 
-## To get started, read the TinaCMS [docs](https://tinacms.org/docs) or checkout the [repository](https://github.com/kendallstrautman/brevifolia-next-tinacms).
+## Checkout the [repository](https://github.com/kamerontanseli/kamerontanseli.github.io/tree/version_2).
 
-- ## Email: [hello@tinacms.org]
-- ## Twitter: [@tina_cms](https://twitter.com/tina_cms)
-- ## Github: [tinacms](https://github.com/tinacms/tinacms)
+- ## Email: [kam.tanseli@gmail.com]
+- ## Twitter: [@KameronTanseli](https://twitter.com/KameronTanseli)
+- ## Instagram: [@kameron_tanseli](https://instagram.com/kameron_tanseli)
