@@ -4,7 +4,10 @@ export default function SEO({ slug, post, content }) {
   return (
     <Head>
       <meta property="og:title" content={post.title} />
-      <meta property="og:site_name" content="Kameron Tanseli" />
+      <meta
+        property="og:site_name"
+        content="https://kamerontanseli.github.io/"
+      />
       <meta
         property="og:url"
         content={`https://kamerontanseli.github.io/blog/${slug}`}
@@ -16,7 +19,10 @@ export default function SEO({ slug, post, content }) {
       <meta property="og:type" content="article" />
       <meta
         property="og:image"
-        content={`https://kamerontanseli.github.io/${post.hero_image.replace('../', '')}`}
+        content={`https://kamerontanseli.github.io/${post.hero_image.replace(
+          "../",
+          ""
+        )}`}
       ></meta>
     </Head>
   );
