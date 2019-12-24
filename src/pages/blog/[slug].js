@@ -17,7 +17,7 @@ export default function BlogTemplate(props) {
       siteDescription={markdownBody.slice(0, 200).trimEnd()}
       siteTitle={props.siteTitle}
     >
-      <SEO post={frontmatter} content={markdownBody} />
+      <SEO slug={props.slug} post={frontmatter} content={markdownBody} />
       <article className="blog">
         <figure className="blog__hero">
           <img
@@ -174,6 +174,7 @@ BlogTemplate.getInitialProps = async function(ctx) {
   const data = matter(content.default);
   return {
     siteTitle: config.title,
+    slug,
     ...data
   };
 };

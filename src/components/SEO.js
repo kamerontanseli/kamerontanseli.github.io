@@ -1,13 +1,13 @@
 import Head from "next/head";
 
-export default function SEO({ post, content }) {
+export default function SEO({ slug, post, content }) {
   return (
     <Head>
       <meta property="og:title" content={post.title} />
       <meta property="og:site_name" content="Kameron Tanseli" />
       <meta
         property="og:url"
-        content={`https://kamerontanseli.github.io/blog/${post.slug}`}
+        content={`https://kamerontanseli.github.io/blog/${slug}`}
       />
       <meta
         property="og:description"
