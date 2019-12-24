@@ -14,7 +14,10 @@ export default function SEO({ post, content }) {
         content={content.slice(0, 200).trimEnd()}
       />
       <meta property="og:type" content="article" />
-      <meta property="og:image" content={post.hero_image}></meta>
+      <meta
+        property="og:image"
+        content={`https://kamerontanseli.github.io/${post.hero_image.replace('../', '')}`}
+      ></meta>
     </Head>
   );
 }
