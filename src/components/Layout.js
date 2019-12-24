@@ -15,7 +15,7 @@ export default function Layout(props) {
   >
     <Meta
       siteTitle={props.siteTitle}
-      siteDescription={props.siteDescription}
+      description={props.siteDescription}
     />
     <Header siteTitle={props.siteTitle} />
     <div className="content">{props.children}</div>

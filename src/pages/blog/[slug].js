@@ -1,8 +1,8 @@
 import * as React from "react";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-
 import Layout from "../../components/Layout";
+import SEO from "../../components/SEO";
 
 export default function BlogTemplate(props) {
   function reformatDate(fullDate) {
@@ -13,7 +13,11 @@ export default function BlogTemplate(props) {
   const frontmatter = props.data;
 
   return (
-    <Layout siteTitle={props.siteTitle}>
+    <Layout
+      siteDescription={markdownBody.slice(0, 200).trimEnd()}
+      siteTitle={props.siteTitle}
+    >
+      <SEO post={frontmatter} content={markdownBody} />
       <article className="blog">
         <figure className="blog__hero">
           <img
