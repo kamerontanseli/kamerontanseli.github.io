@@ -33685,7 +33685,7 @@ function SEO(_ref) {
     __self: this
   }), __jsx("meta", {
     property: "og:site_name",
-    content: "Kameron Tanseli",
+    content: "https://kamerontanseli.github.io/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -33696,7 +33696,7 @@ function SEO(_ref) {
     content: "https://kamerontanseli.github.io/blog/".concat(slug),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }), __jsx("meta", {
@@ -33704,7 +33704,7 @@ function SEO(_ref) {
     content: content.slice(0, 200).trimEnd(),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 15
     },
     __self: this
   }), __jsx("meta", {
@@ -33712,15 +33712,15 @@ function SEO(_ref) {
     content: "article",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 19
     },
     __self: this
   }), __jsx("meta", {
     property: "og:image",
-    content: "https://kamerontanseli.github.io/".concat(post.hero_image.replace('../', '')),
+    content: "https://kamerontanseli.github.io/".concat(post.hero_image.replace("../", "")),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: this
   }));
