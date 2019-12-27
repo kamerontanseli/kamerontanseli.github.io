@@ -13916,7 +13916,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 2);
+const fs = __webpack_require__(/*! fs */ 1);
 const sections = __webpack_require__(/*! section-matter */ "../node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "../node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "../node_modules/gray-matter/lib/stringify.js");
@@ -33914,33 +33914,37 @@ BlogTemplate.getInitialProps = function _callee(ctx) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./1-day-projects-outy.md": [
+		"./posts/1-day-projects-outy.md",
+		2
+	],
 	"./9-ways-to-level-up-your-javascript-code.md": [
 		"./posts/9-ways-to-level-up-your-javascript-code.md",
-		2
+		3
 	],
 	"./quick-guide-to-using-interfaces-with-javascript.md": [
 		"./posts/quick-guide-to-using-interfaces-with-javascript.md",
-		3
+		4
 	],
 	"./rating-landing-pages-twizzle.md": [
 		"./posts/rating-landing-pages-twizzle.md",
-		8
+		5
 	],
 	"./rating-landing-pages-walling.md": [
 		"./posts/rating-landing-pages-walling.md",
-		9
+		6
 	],
 	"./the-rules-of-reusable-components.md": [
 		"./posts/the-rules-of-reusable-components.md",
-		4
+		7
 	],
 	"./utilise-render-props-to-separate-logic-from-presentation-in-react.md": [
 		"./posts/utilise-render-props-to-separate-logic-from-presentation-in-react.md",
-		5
+		8
 	],
 	"./writing-reusable-javascript.md": [
 		"./posts/writing-reusable-javascript.md",
-		6
+		9
 	]
 };
 function webpackAsyncContext(req) {
@@ -33965,7 +33969,18 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 2:
 /*!***************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fkamerontanseli%2FDocuments%2Fkameron-blog%2Fsrc%2Fpages%2Fblog%2F%5Bslug%5D.js ***!
   \***************************************************************************************************************************************************************************/
@@ -33974,17 +33989,6 @@ module.exports = webpackAsyncContext;
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fkamerontanseli%2FDocuments%2Fkameron-blog%2Fsrc%2Fpages%2Fblog%2F%5Bslug%5D.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fkamerontanseli%2FDocuments%2Fkameron-blog%2Fsrc%2Fpages%2Fblog%2F%5Bslug%5D.js!./");
 
-
-/***/ }),
-
-/***/ 2:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -33999,5 +34003,5 @@ module.exports = dll_99873879131b459af989;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[slug].js.map
