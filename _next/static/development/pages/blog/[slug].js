@@ -33886,7 +33886,7 @@ BlogTemplate.getInitialProps = function _callee(ctx) {
         case 3:
           content = _context.sent;
           _context.next = 6;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_6___default.a.awrap(__webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! ../../data/config.json */ "./data/config.json", 3)));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_6___default.a.awrap(__webpack_require__.e(/*! import() */ 10).then(__webpack_require__.t.bind(null, /*! ../../data/config.json */ "./data/config.json", 3)));
 
         case 6:
           config = _context.sent;
@@ -33916,10 +33916,14 @@ BlogTemplate.getInitialProps = function _callee(ctx) {
 var map = {
 	"./1-day-projects-outy.md": [
 		"./posts/1-day-projects-outy.md",
-		2
+		1
 	],
 	"./9-ways-to-level-up-your-javascript-code.md": [
 		"./posts/9-ways-to-level-up-your-javascript-code.md",
+		2
+	],
+	"./automation.md": [
+		"./posts/automation.md",
 		3
 	],
 	"./quick-guide-to-using-interfaces-with-javascript.md": [
@@ -33969,18 +33973,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 1:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 2:
+/***/ 0:
 /*!***************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fkamerontanseli%2FDocuments%2Fkameron-blog%2Fsrc%2Fpages%2Fblog%2F%5Bslug%5D.js ***!
   \***************************************************************************************************************************************************************************/
@@ -33989,6 +33982,17 @@ module.exports = webpackAsyncContext;
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fkamerontanseli%2FDocuments%2Fkameron-blog%2Fsrc%2Fpages%2Fblog%2F%5Bslug%5D.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5Bslug%5D&absolutePagePath=%2FUsers%2Fkamerontanseli%2FDocuments%2Fkameron-blog%2Fsrc%2Fpages%2Fblog%2F%5Bslug%5D.js!./");
 
+
+/***/ }),
+
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 
@@ -34003,5 +34007,5 @@ module.exports = dll_99873879131b459af989;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[slug].js.map
