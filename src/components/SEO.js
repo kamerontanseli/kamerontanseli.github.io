@@ -19,10 +19,14 @@ export default function SEO({ slug, post, content }) {
       <meta property="og:type" content="article" />
       <meta
         property="og:image"
-        content={`https://kamerontanseli.github.io/${post.hero_image.replace(
-          "../",
-          ""
-        )}`}
+        content={
+          (post.hero_image || "").startsWith("/")
+            ? `https://kamerontanseli.github.io/${post.hero_image.replace(
+                "../",
+                ""
+              )}`
+            : post.hero_image
+        }
       ></meta>
     </Head>
   );
