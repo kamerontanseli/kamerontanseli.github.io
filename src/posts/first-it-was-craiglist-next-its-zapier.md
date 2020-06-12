@@ -5,8 +5,6 @@ hero_image: ../static/posts/4dd4d1cf4bd7c8c90f000000.png
 title: "First, it was Craigslist, next it's Zapier"
 ---
 
-_Top image cover is from [https://thegongshow.tumblr.com/post/345941486/the-spawn-of-craigslist-like-most-vcs-that-focus](https://thegongshow.tumblr.com/post/345941486/the-spawn-of-craigslist-like-most-vcs-that-focus)_
-
 As I delve deeper into the no-code space I see a lot of Zapier, Integromat and [Tray.io](https://tray.io) workflows. Some of these are actually quite complex and require some programming knowledge to understand them (which kind of defeats the point of no-code).  
   
 As I was looking at some of these workflows, I couldn't help but think how there will be this eventual shift like with Craiglist where companies will spring up that just focus on certain more complex popular workflows.

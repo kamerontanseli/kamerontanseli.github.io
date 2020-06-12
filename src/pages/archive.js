@@ -1,13 +1,33 @@
 import matter from "gray-matter";
-import BlogSplitView from "../components/new/BlogSplitView";
+import ReactMarkdown from "react-markdown";
+import Meta from "../components/new/Meta";
+import Sidebar from "../components/new/Sidebar";
 
-const Index = (props) => {
-  return <BlogSplitView {...props} />;
+const Archive = ({ allBlogs }) => {
+  return (
+    <div className="layout">
+      <Meta title={`kamrn | All Articles`} />
+      <style jsx>{`
+        .layout {
+          padding: 10em;
+        }
+
+        main {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      `}</style>
+      <main>
+        <Sidebar slice={false} posts={allBlogs} />
+      </main>
+    </div>
+  );
 };
 
-export default Index;
+export default Archive;
 
-Index.getInitialProps = async function() {
+Archive.getInitialProps = async function() {
+  const siteConfig = await import(`../data/config.json`);
   //get posts & context from folder
   const posts = ((context) => {
     const keys = context.keys();
@@ -39,6 +59,6 @@ Index.getInitialProps = async function() {
   return {
     allBlogs: posts,
     post,
-    slug: firstPost.slug,
+    ...siteConfig,
   };
 };

@@ -2,7 +2,7 @@
 author: Kameron Tanseli
 date: '2020-05-21T11:24:23.000Z'
 hero_image: ../static/posts/81-11NToHvL.jpg
-title: "I spent 7 days following the Make Time book and here's what I learned."
+title: "I spent 7 days following the Make Time book"
 ---
 
 Since COVID I've been forced to be stuck at home, much like the rest of you (I hope). In the time I've felt my dependence on social apps like Instagram, Twitter, and Reddit has increased, slowly draining my energy and attention away from important projects of mine.
@@ -15,7 +15,7 @@ In a nutshell while Jake and John were at Google they both felt like they were w
 
 After 3 days of trying to find exactly how to implement the Make Time system I finally cracked it (well my interpretation of it). Here are the tactics that worked for me.
 
-#### No Caffeine after 4 pm
+### No Caffeine after 4 pm
 
 As a Developer, coffee is very much ingrained into our lifestyles from early on in our careers. I even have a Nespresso machine next to my bed! But I never really read up on coffee and it's side effects, I kinda just assumed energy for 1 hour and then have a crash sort of deal.
 
@@ -29,7 +29,7 @@ But that's not the case. Caffeine stays present within the body for up to 6 hour
 
 *   I felt tired and fell asleep much earlier than I used to do. Around 10 pm rather than midnight.
 
-#### Thirty Minute Calendar
+### Thirty Minute Calendar
 
 Every morning I'll wake up and plan out my day. I'll schedule every task I need to do from 8 am till 8 pm. This includes but not limited to Showers, Breakfast, Reading, Work, and Meetings. I aim for 30-minute events as they're the most realistic in terms of time spent.
 
@@ -47,7 +47,7 @@ If you're on a Mac I highly recommend importing both your work and personal cale
 *   My mornings feel more structured.
 *   You can also look back on your day and see exactly where you spent your time.
 
-#### The Distraction Free Phone
+### The Distraction Free Phone
 
 Having just bought myself a new Pixel I was loving all the new features and ease of use of the operating system. One thing that caught my eye and changed everything for me this week was the "Focus Mode" feature (Downtime on IOS devices).
 
@@ -67,7 +67,7 @@ Having the ability to choose which apps to allow notifications and access to for
 
 As with anything in life, nothing is guaranteed to work 100% of the time. I felt a lot of the tactics in the book were common sense or just a utopian style sort of thinking. Here are a few notable things that didn't work for me:
 
-#### Highlights
+### Highlights
 
 The Highlight method in Make Time is a way of choosing what your focus will be for that day. For example: "Talk a walk" or "Write 10 pages for my new book".
 
@@ -75,7 +75,7 @@ Instead of stressing over whats the most important highlight for your day. I rec
 
 This will give you the time to decompress and work on whatever pops into your head as you go about your day.
 
-#### Reflections
+### Reflections
 
 I love to reflect on my performance. I generally like to use the 80/20 Pareto/Tim Ferriss reflection methods at the end of every month as a sort of general overview of my time.
 
@@ -91,7 +91,7 @@ As per my previous statement. I don't think the Highlight is very important here
 
 I feel like I'm nitpicking but this part of the book should be about where you spend your time rather than how you feel.
 
-#### Common Sense
+### Common Sense
 
 A lot of the book felt like common sense. For example:
 
@@ -103,7 +103,7 @@ A lot of the book felt like common sense. For example:
 
 ## So what's the rating?
 
-##### 4/10
+### 4/10
 
 **Pros:**
 
