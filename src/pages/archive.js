@@ -16,6 +16,12 @@ const Archive = ({ allBlogs }) => {
           max-width: 400px;
           margin: 0 auto;
         }
+
+        @media screen and (max-width: 1024px) {
+          .layout {
+            padding: 1em;
+          }
+        }
       `}</style>
       <main>
         <Sidebar slice={false} posts={allBlogs} />
@@ -50,7 +56,7 @@ Archive.getInitialProps = async function() {
   })(require.context("../posts", true, /\.md$/)).sort(
     (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
   );
-  
+
   return {
     allBlogs: posts,
   };
