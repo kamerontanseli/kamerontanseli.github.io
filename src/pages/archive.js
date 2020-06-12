@@ -27,7 +27,6 @@ const Archive = ({ allBlogs }) => {
 export default Archive;
 
 Archive.getInitialProps = async function() {
-  const siteConfig = await import(`../data/config.json`);
   //get posts & context from folder
   const posts = ((context) => {
     const keys = context.keys();
@@ -51,14 +50,8 @@ Archive.getInitialProps = async function() {
   })(require.context("../posts", true, /\.md$/)).sort(
     (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
   );
-
-  const firstPost = posts[0];
-  const content = await import(`../posts/${firstPost.slug}.md`);
-  const post = matter(content.default);
-
+  
   return {
     allBlogs: posts,
-    post,
-    ...siteConfig,
   };
 };
