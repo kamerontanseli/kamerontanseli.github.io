@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{AnCH:function(n){n.exports=JSON.parse('{"title":"Kameron","description":"Kameron Tanseli - My thoughts."}')}}]);
