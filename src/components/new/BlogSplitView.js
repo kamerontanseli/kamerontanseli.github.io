@@ -6,7 +6,10 @@ import Contact from "./Contact";
 const BlogSplitView = ({ allBlogs, post, slug }) => {
   return (
     <div className="layout">
-      <Meta title={`kamrn | ${post.data.title}`} />
+      <Meta
+        title={`kamrn | ${post.data.title}`}
+        description={post.data.byline || undefined}
+      />
       <style jsx global>{`
         img {
           max-width: 100%;

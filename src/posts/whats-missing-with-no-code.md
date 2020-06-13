@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-03T22:25:27.000Z'
 hero_image: https://images.unsplash.com/photo-1519191870696-89600646be7b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 title: "What's missing with No-Code"
+byline: "I  recently built an app to help No-Coders create automated Mailchimp newsletters using Google Sheets. Along the way I thought to myself about how the same app I was creating could of all be done without code..."
 ---
 
 I  recently [built an app](https://gsheet2mail.com) to help No-Coders create automated Mailchimp newsletters using Google Sheets. Along the way I thought to myself about how the same app I was creating could of all be done without code...

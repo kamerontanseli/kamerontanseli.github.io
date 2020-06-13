@@ -3,12 +3,12 @@ author: Kameron Tanseli
 date: '2019-12-24T13:56:26.370Z'
 hero_image: ../static/js-cover.png
 title: 'The rules of reusable components'
+byline: "I spend a lot of my time developing new reusable UI components."
 ---
 
 I spend a lot of my time developing new reusable UI components.
 
-This means during development I tend to extract UI components that are placed in a shared library or styleguide.
-These components are reused throughout the entire project. Often having different styles or layouts when integrated into features.
+This means during development I tend to extract UI components that are placed in a shared library or styleguide. These components are reused throughout the entire project. Often having different styles or layouts when integrated into features.
 
 Along the way I learnt a few rules that helped me save time and pain.
 

@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2019-12-24T15:55:26.370Z'
 hero_image: ../static/posts/outy-cover.png
 title: '1 Day Projects: Outy'
+byline: "Outy is an app I developed to help solve the problem of choosing places to meetup with friends."
 ---
 
 [Outy](https://outy-app.herokuapp.com/) is an app I developed to help solve the problem of choosing places to meetup with friends.

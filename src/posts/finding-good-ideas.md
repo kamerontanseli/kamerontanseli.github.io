@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-13T09:33:54.000Z'
 hero_image: https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 title: "Finding Good Ideas"
+byline: "Since my last article I've been getting a lot of questions on Twitter on how to find business ideas. I'm no guru myself but I do end up with a lot of SaaS ideas (almost daily at this point)."
 ---
 
 Since my last article I've been getting a lot of questions on Twitter on how to find business ideas. I'm no guru myself but I do end up with a lot of SaaS ideas (almost daily at this point).

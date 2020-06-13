@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-01T09:21:18.000Z'
 hero_image: ../static/posts/34442516-fb1a1a3c-ecc2-11e7-8fe8-530435f22336.jpg
 title: "Optimizing Gatsby"
+byline: "I've been getting cuddly with Gatsby over the last 5 months as my new role at Tray.io requires me to oversee the development of their marketing site."
 ---
 
 I've been getting cuddly with [Gatsby](https://www.gatsbyjs.org/) over the last 5 months as my new role at [Tray.io](https://tray.io) requires me to oversee the development of their marketing site.

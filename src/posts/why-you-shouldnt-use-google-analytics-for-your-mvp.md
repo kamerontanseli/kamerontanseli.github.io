@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-06T19:08:21.000Z'
 hero_image: https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 title: "Why you shouldn't use Google Analytics for your MVP"
+byline: "You've had the next best idea, Uber for Cats, and you have coded up a landing page test complete with email capture and pricing tables in true lean fashion."
 ---
 
 You've had the next best idea, Uber for Cats, and you have coded up a landing page test complete with email capture and pricing tables in true lean fashion.

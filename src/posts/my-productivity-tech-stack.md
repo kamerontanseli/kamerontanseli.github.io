@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-02T21:16:44.000Z'
 hero_image: https://images.unsplash.com/photo-1544726982-b414d58fabaa?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 title: "My Productivity Tech Stack"
+byline: "When your product change rapidly in the face of new information. You have a greater chance of coming out on top."
 ---
 
 When your product change rapidly in the face of new information. You have a greater chance of coming out on top.

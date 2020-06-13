@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2019-12-24T13:56:26.370Z'
 hero_image: ../static/js-cover.png
 title: 'Quick Guide to using interfaces with JavaScript'
+byline: "I wrote this article back in 2016 and a lot has changed since. Because of this shift I have decided to remove certain sections that are no longer considered best practises or are based on ES5 APIs. Enjoy :)"
 ---
 
 I wrote this article back in 2016 and a lot has changed since. Because of this shift I have decided to remove certain sections that are no longer considered best practises or are based on ES5 APIs. Enjoy :)

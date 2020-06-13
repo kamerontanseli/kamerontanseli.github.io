@@ -8,6 +8,22 @@ export default function Meta({ title, description }) {
         <meta charSet="utf-8" />
         <title>{title}</title>
         <meta name="description" content={description}></meta>
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@KameronTanseli" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:creator" content="@KameronTanseli" />
+        <meta
+          name="twitter:image"
+          content="https://kamrn.com/static/meta.png"
+        ></meta>
+
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://kamrn.com" />
+        <meta property="og:image" content="https://kamrn.com/static/meta.png" />
+        <meta property="og:description" content={description} />
       </Head>
       <style jsx global>
         {`

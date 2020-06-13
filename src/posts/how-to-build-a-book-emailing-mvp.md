@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-04-28T16:35:15.000Z'
 hero_image: ../static/posts/social.png
 title: "How I Built One Page a Day"
+byline: "If you've been following my activity on Twitter you would have seen my latest project, One Page a Day, an email service that sends you one page from a new book every morning at 7am"
 ---
 
 If you've been following my activity on Twitter you would have seen my latest project, [One Page a Day](https://onepageday.co.uk/), an email service that sends you one page from a new book every morning at 7am.

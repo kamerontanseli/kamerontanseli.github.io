@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2019-12-24T15:55:26.370Z'
 hero_image: ../static/posts/landing-pages-cover.png
 title: 'Rating Landing Pages: Twizzle'
+byline: "Twizzle is a Twitter client that focuses on messaging and tweeting only. How do I know this? Because they're entire selling point is explained in one sentence. Amazingly done."
 ---
 
 [Twizzle](https://twizzle.app) is a Twitter client that focuses on messaging and tweeting only. How do I know this? Because they're entire selling point is explained in one sentence. Amazingly done.

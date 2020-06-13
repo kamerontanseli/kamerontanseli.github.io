@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-08T22:36:05.000Z'
 hero_image: ../static/posts/20150408WHITE-slide-L0ZB-superJumbo.jpg
 title: "Why I love Chefs"
+byline: "I've been struggling to write these past couple of days. My mind has been scattered focusing on work at Tray.io and gsheet2mail.com. So apologies for not posting yesterday."
 ---
 
 I've been struggling to write these past couple of days. My mind has been scattered focusing on work at [Tray.io](https://tray.io) and [gsheet2mail.com](https://gsheet2mail.com). So apologies for not posting yesterday.

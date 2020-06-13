@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-09T17:09:28.000Z'
 hero_image: ../static/posts/4dd4d1cf4bd7c8c90f000000.png
 title: "First, it was Craigslist, next it's Zapier"
+byline: "As I delve deeper into the no-code space I see a lot of Zapier, Integromat and Tray.io workflows. Some of these are actually quite complex and require some programming knowledge to understand them (which kind of defeats the point of no-code)."
 ---
 
 As I delve deeper into the no-code space I see a lot of Zapier, Integromat and [Tray.io](https://tray.io) workflows. Some of these are actually quite complex and require some programming knowledge to understand them (which kind of defeats the point of no-code).  

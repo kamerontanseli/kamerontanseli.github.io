@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2019-12-24T13:56:26.370Z'
 hero_image: ../static/js-cover.png
 title: 'Utilise render props in React'
+byline: "Separating logic from your presentation has always been a best practise. It enforces the single responsibility principle (SRP) and makes the code easier to test."
 ---
 
 Separating logic from your presentation has always been a best practise. It enforces the [single responsibility principle (SRP)](https://en.wikipedia.org/wiki/Single_responsibility_principle) and makes the code easier to test.

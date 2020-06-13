@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-04T20:58:02.000Z'
 hero_image: https://images.unsplash.com/photo-1534841645203-8843b9ac9737?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ
 title: "Getting Over Fears"
+byline: "For the last week I've been acting as a sort of motivational speaker to my friends. Each one has been hampered with fears around their creative pursuits."
 ---
 
 For the last week I've been acting as a sort of motivational speaker to my friends. Each one has been hampered with fears around their creative pursuits.

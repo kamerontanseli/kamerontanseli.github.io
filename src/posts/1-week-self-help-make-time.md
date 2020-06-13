@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2020-05-21T11:24:23.000Z'
 hero_image: ../static/posts/81-11NToHvL.jpg
 title: "I spent 7 days following the Make Time book"
+byline: "Since COVID I've been forced to be stuck at home, much like the rest of you (I hope). In the time I've felt my dependence on social apps like Instagram, Twitter, and Reddit has increased, slowly draining my energy and attention away from important projects of mine."
 ---
 
 Since COVID I've been forced to be stuck at home, much like the rest of you (I hope). In the time I've felt my dependence on social apps like Instagram, Twitter, and Reddit has increased, slowly draining my energy and attention away from important projects of mine.

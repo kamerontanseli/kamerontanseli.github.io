@@ -3,6 +3,7 @@ author: Kameron Tanseli
 date: '2019-12-24T15:55:26.370Z'
 hero_image: ../static/posts/walling-1.png
 title: 'Rating Landing Pages: Walling'
+byline: "Walling is an app that helps you organise your ideas into boards. Kinda like Google Keep but a whole lot prettier."
 ---
 
 [Walling](https://walling.app) is an app that helps you organise your ideas into boards. Kinda like Google Keep but a whole lot prettier.
