@@ -58,6 +58,7 @@ const BlogSplitView = ({ allBlogs, post, slug }) => {
         <article>
           <h4>{post.data.title}</h4>
           <ReactMarkdown source={post.content} />
+          <iframe src="https://kameront.substack.com/embed" width="100%" height="320" style={{ border: 0 }} frameborder="0" scrolling="no"></iframe>
         </article>
       </div>
       <div className="grid">

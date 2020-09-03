@@ -23,6 +23,9 @@ export default function Contact() {
         <li>
           <a target="_blank" rel="noopener noreferrer" href="mailto:kamerontanseliwork@gmail.com">Email</a>
         </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://kameront.substack.com/">Newsletter</a>
+        </li>
       </ul>
     </div>
   );
