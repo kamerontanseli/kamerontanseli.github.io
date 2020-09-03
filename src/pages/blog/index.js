@@ -1,13 +1,13 @@
 import matter from "gray-matter";
 import BlogSplitView from "../../components/new/BlogSplitView";
 
-const BlogDetail = (props) => {
+const Blog = (props) => {
   return <BlogSplitView {...props} />;
 };
 
-export default BlogDetail;
+export default Blog;
 
-BlogDetail.getInitialProps = async function(ctx) {
+Blog.getInitialProps = async function() {
   //get posts & context from folder
   const posts = ((context) => {
     const keys = context.keys();
@@ -31,13 +31,14 @@ BlogDetail.getInitialProps = async function(ctx) {
   })(require.context("../../posts", true, /\.md$/)).sort(
     (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
   );
-
-  const content = await import(`../../posts/${ctx.query.slug}.md`);
+  
+  const firstPost = posts[0];
+  const content = await import(`../../posts/${firstPost.slug}.md`);
   const post = matter(content.default);
 
   return {
     allBlogs: posts,
     post,
-    slug: ctx.query.slug,
+    slug: firstPost.slug,
   };
 };

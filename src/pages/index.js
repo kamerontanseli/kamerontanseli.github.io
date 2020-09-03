@@ -1,44 +1,55 @@
-import matter from "gray-matter";
-import BlogSplitView from "../components/new/BlogSplitView";
+import Meta from "../components/new/Meta";
+import Navigation from "../components/new/Navigation";
+import Link from "next/link";
 
-const Index = (props) => {
-  return <BlogSplitView {...props} />;
+const Index = () => {
+  return (
+    <>
+      <div className="layout">
+        <Meta
+          title={`kamrn | Growth Engineer, Hacker, Speaker`}
+          description={``}
+        />
+        <Navigation />
+        <h1>Kameron Tanseli</h1>
+        <p>
+          Senior Growth Engineer at{" "}
+          <a target="_blank" rel="noopener noreferrer" href="https://tray.io">
+            Tray.io
+          </a>
+        </p>
+        <p>
+          <Link href="/blog" as="/blog">
+            <a style={{ marginRight: 10 }} href="/blog">
+              Blogger
+            </a>
+          </Link>
+          <Link href="/work" as="/work">
+            <a style={{ marginRight: 10 }} href="/work">
+              Maker
+            </a>
+          </Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/KameronTanseli"
+          >
+            Avid Tweeter
+          </a>
+        </p>
+      </div>
+      <style jsx>{`
+        .layout {
+          padding: 10em;
+        }
+        @media screen and (max-width: 1024px) {
+          .layout {
+            padding: 1em;
+          }
+        }
+      `}</style>
+    </>
+  );
 };
 
 export default Index;
-
-Index.getInitialProps = async function() {
-  //get posts & context from folder
-  const posts = ((context) => {
-    const keys = context.keys();
-    const values = keys.map(context);
-    const data = keys.map((key, index) => {
-      // Create slug from filename
-      const slug = key
-        .replace(/^.*[\\\/]/, "")
-        .split(".")
-        .slice(0, -1)
-        .join(".");
-      const value = values[index];
-      // Parse yaml metadata & markdownbody in document
-      const document = matter(value.default);
-      return {
-        document,
-        slug,
-      };
-    });
-    return data;
-  })(require.context("../posts", true, /\.md$/)).sort(
-    (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
-  );
-
-  const firstPost = posts[0];
-  const content = await import(`../posts/${firstPost.slug}.md`);
-  const post = matter(content.default);
-
-  return {
-    allBlogs: posts,
-    post,
-    slug: firstPost.slug,
-  };
-};

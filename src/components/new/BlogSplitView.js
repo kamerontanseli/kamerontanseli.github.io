@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import Meta from "./Meta";
 import Sidebar from "./Sidebar";
 import Contact from "./Contact";
+import Navigation from "./Navigation";
 
 const BlogSplitView = ({ allBlogs, post, slug }) => {
   return (
@@ -53,17 +54,16 @@ const BlogSplitView = ({ allBlogs, post, slug }) => {
           }
         }
       `}</style>
+      <Navigation />
       <div className="grid">
         <Sidebar posts={allBlogs} current={slug} />
         <article>
           <h4>{post.data.title}</h4>
           <ReactMarkdown source={post.content} />
-          <iframe src="https://kameront.substack.com/embed" width="100%" height="320" style={{ border: 0 }} frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://kameront.substack.com/embed" width="100%" height="320" style={{ border: 0 }} frameBorder="0" scrolling="no"></iframe>
         </article>
       </div>
-      <div className="grid">
-        <Contact />
-      </div>
+      <Contact />
     </div>
   );
 };
