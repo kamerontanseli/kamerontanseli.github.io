@@ -6,7 +6,7 @@ const Work = () => {
     <>
       <div className="layout">
         <Meta
-          title={`kamrn | Growth Engineer, Hacker, Speaker`}
+          title={`kamrn | Growth Engineer, Maker, Speaker`}
           description={``}
         />
         <Navigation />
@@ -50,10 +50,14 @@ const Work = () => {
 
         <h1>Products</h1>
 
+        <h3>Meta OG Chrome Extension - Coming Soon</h3>
+        <p>Ensuring Social tags are setup correctly whilst developing locally is a nightmare. <br />
+        After finding that the existing meta chrome extensions aren't professionally developed I've set out to make one myself.</p>
+
         <h3>londonremotework.com</h3>
         <p>
           Built during the height of Covid-19 in the UK. I built a site which
-          scrapes Indeed and filters only by remote roles in London. Completely
+          scrapes Indeed and filters only by remote roles in London.  <br />  Completely
           ad free to help with the unemployment crisis we have at the moment.
         </p>
         <p>
@@ -84,14 +88,14 @@ const Work = () => {
         <h3>gsheet2mail.com - dead</h3>
         <p>
           Playing around with no-code tools I created a tool which consumes a
-          google sheet, turns it into an RSS feed and plugs it into Mailchimp to
+          google sheet,  <br />  turns it into an RSS feed and plugs it into Mailchimp to
           create automated newsletters.
         </p>
 
         <h3>cycle-notes.com - dead</h3>
         <p>
           Took a 3 month break after leaving Flux and decided to pursue creating
-          a tool to help people study. Cycle notes is a micro studying tool
+          a tool to help people study. <br /> Cycle notes is a micro studying tool
           which breaks down long notes by sending you a small paragraph from
           your notes every day. #7 on ProductHunt
         </p>
@@ -100,6 +104,13 @@ const Work = () => {
         <p>
           Created an email newsletter which sent one page from a new book
           everyday to a list of subscribers. #8 on ProductHunt
+        </p>
+
+        <h3>trysalud.com - dead</h3>
+        <p>
+          Salud was a startup idea I had during my interview process at <a target="_blank"
+          rel="noopener noreferrer" href="https://www.zinc.vc/">Zinc</a>. <br />
+          It allowed those suffering from food allergies to quickly filter fast food restaurant menus.
         </p>
       </div>
       <style jsx>{`

@@ -6,7 +6,7 @@ import Sidebar from "../components/new/Sidebar";
 const Archive = ({ allBlogs }) => {
   return (
     <div className="layout">
-      <Meta title={`kamrn | All Articles`} />
+      <Meta title={`kamrn | Growth Engineer, Maker, Speaker`} />
       <style jsx>{`
         .layout {
           padding: 10em;

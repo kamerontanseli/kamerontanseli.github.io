@@ -7,7 +7,7 @@ const Index = () => {
     <>
       <div className="layout">
         <Meta
-          title={`kamrn | Growth Engineer, Hacker, Speaker`}
+          title={`kamrn | Growth Engineer, Maker, Speaker`}
           description={``}
         />
         <Navigation />
