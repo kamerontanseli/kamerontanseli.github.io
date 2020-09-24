@@ -6344,7 +6344,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/kamerontanseli/Desktop/kamerontanseli.github.io/src/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/kamerontanseli/Documents/kameron-blog/src/.next");
       return error;
     }
   };
