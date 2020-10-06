@@ -1,6 +1,15 @@
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function Meta({ title, description }) {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-72466279-4");
+  }, []);
   return (
     <>
       <Head>
@@ -24,6 +33,10 @@ export default function Meta({ title, description }) {
         <meta property="og:url" content="https://kamrn.com" />
         <meta property="og:image" content="https://kamrn.com/static/meta.png" />
         <meta property="og:description" content={description} />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-72466279-4"
+        ></script>
       </Head>
       <style jsx global>
         {`
