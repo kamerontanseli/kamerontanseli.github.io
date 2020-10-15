@@ -50,21 +50,12 @@ const Work = () => {
 
         <h1>Products</h1>
 
-        <h3>MetaScan</h3>
+        <h3>MetaScan - Dead</h3>
         <p>
           Ensuring Social tags are setup correctly whilst developing locally is
           a nightmare. <br />
           After finding that the existing meta chrome extensions aren't
           professionally developed I've set out to make one myself.
-        </p>
-        <p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="http://getmetascan.com/"
-          >
-            View
-          </a>
         </p>
 
         <h3>londonremotework.com</h3>
