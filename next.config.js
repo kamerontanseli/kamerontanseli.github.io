@@ -11,7 +11,6 @@ module.exports = ({
    exportPathMap: async function() {
     const routes = {
       "/": { page: "/" },
-      "/blog": { page: "/blog/index" },
       "/about": { page: "/about" },
       "/projects": { page: "/projects" },
     };
