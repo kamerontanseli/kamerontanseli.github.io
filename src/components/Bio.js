@@ -15,7 +15,7 @@ const Bio = () => (
           <p>
             You can read more <a href="/about">about me</a>,{" "}
             <a href="/projects">my projects</a>, and{" "}
-            <a href="/blog">my articles</a>.
+            <a href="#articles">my articles</a>.
           </p>
         </div>
         <div className="bio-image">
