@@ -1,42 +1,75 @@
 import matter from "gray-matter";
-import BlogSplitView from "../../components/new/BlogSplitView";
+import ReactMarkdown from "react-markdown";
+import Meta from "../../components/new/Meta";
+import Navigation from "../../components/new/Navigation";
+import Footer from "../../components/Footer";
 
-const BlogDetail = (props) => {
-  return <BlogSplitView {...props} />;
-};
+const BlogDetail = ({ post }) => (
+  <>
+    <Meta
+      title={`${post.data.title}`}
+      description={post.data.byline}
+    />
+    <Navigation />
+    <div className="container">
+      <div className="content">
+        <article>
+          <h1 className="content-title">{post.data.title}</h1>
+          <ReactMarkdown source={post.content} />
+          <iframe
+            src="https://kameront.substack.com/embed"
+            width="100%"
+            height="320"
+            style={{ border: 0 }}
+            frameBorder="0"
+            scrolling="no"
+          ></iframe>
+        </article>
+      </div>
+    </div>
+    <Footer />
+    <style jsx>{`
+      .content {
+        padding: 2em;
+      }
+      .content-title {
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+      .content :global(blockquote) {
+        background-color: #eee;
+        padding: 0.5em;
+        margin: 0;
+        padding-left: 1em;
+        border-left: 5px solid grey;
+      }
+      .content :global(blockquote > p) {
+        margin: 0;
+      }
+      .content :global(a) {
+        color: #0073a7;
+      }
+      .content :global(img) {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+      .content :global(pre) {
+        padding: 1em;
+        background-color: #eee;
+        border-radius: 4px;
+      }
+    `}</style>
+  </>
+);
 
 export default BlogDetail;
 
 BlogDetail.getInitialProps = async function(ctx) {
-  //get posts & context from folder
-  const posts = ((context) => {
-    const keys = context.keys();
-    const values = keys.map(context);
-    const data = keys.map((key, index) => {
-      // Create slug from filename
-      const slug = key
-        .replace(/^.*[\\\/]/, "")
-        .split(".")
-        .slice(0, -1)
-        .join(".");
-      const value = values[index];
-      // Parse yaml metadata & markdownbody in document
-      const document = matter(value.default);
-      return {
-        document,
-        slug,
-      };
-    });
-    return data;
-  })(require.context("../../posts", true, /\.md$/)).sort(
-    (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
-  );
-
   const content = await import(`../../posts/${ctx.query.slug}.md`);
   const post = matter(content.default);
 
   return {
-    allBlogs: posts,
     post,
     slug: ctx.query.slug,
   };

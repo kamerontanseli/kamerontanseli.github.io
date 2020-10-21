@@ -12,8 +12,8 @@ module.exports = ({
     const routes = {
       "/": { page: "/" },
       "/blog": { page: "/blog/index" },
-      "/work": { page: "/work" },
-      "/archive": { page: "/archive" },
+      "/about": { page: "/about" },
+      "/projects": { page: "/projects" },
     };
     //get all .md files in the posts dir
     const blogs = glob.sync('src/posts/**/*.md')

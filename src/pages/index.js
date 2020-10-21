@@ -1,55 +1,54 @@
+import matter from "gray-matter";
 import Meta from "../components/new/Meta";
 import Navigation from "../components/new/Navigation";
 import Link from "next/link";
+import Bio from "../components/Bio";
+import Articles from "../components/Articles";
+import Footer from "../components/Footer";
 
-const Index = () => {
+const Index = ({ posts }) => {
   return (
     <>
-      <div className="layout">
-        <Meta
-          title={`kamrn | Growth Engineer, Maker, Speaker`}
-          description={``}
-        />
-        <Navigation />
-        <h1>Kameron Tanseli</h1>
-        <p>
-          Senior Growth Engineer at{" "}
-          <a target="_blank" rel="noopener noreferrer" href="https://tray.io">
-            Tray.io
-          </a>
-        </p>
-        <p>
-          <Link href="/blog" as="/blog">
-            <a style={{ marginRight: 10 }} href="/blog">
-              Blogger
-            </a>
-          </Link>
-          <Link href="/work" as="/work">
-            <a style={{ marginRight: 10 }} href="/work">
-              Maker
-            </a>
-          </Link>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/KameronTanseli"
-          >
-            Avid Tweeter
-          </a>
-        </p>
-      </div>
-      <style jsx>{`
-        .layout {
-          padding: 10em;
-        }
-        @media screen and (max-width: 1024px) {
-          .layout {
-            padding: 1em;
-          }
-        }
-      `}</style>
+      <Meta
+        title={`Kameron Tanseli | Growth Engineer, JavaScript Dev, Entrepreneur`}
+        description={`Hi 🙌🏻, my name's Kameron Tanseli I'm a Growth
+                Engineer, JavaScript developer, and entrepreneur. I'm currently focused with helping Tray.io become the next biggest tech IPO.`.trim()}
+      />
+      <Navigation />
+      <Bio />
+      <Articles posts={posts} />
+      <Footer />
+      <style jsx>{``}</style>
     </>
   );
+};
+
+Index.getInitialProps = async function() {
+  //get posts & context from folder
+  const posts = ((context) => {
+    const keys = context.keys();
+    const values = keys.map(context);
+    const data = keys.map((key, index) => {
+      // Create slug from filename
+      const slug = key
+        .replace(/^.*[\\\/]/, "")
+        .split(".")
+        .slice(0, -1)
+        .join(".");
+      const value = values[index];
+      // Parse yaml metadata & markdownbody in document
+      const document = matter(value.default);
+      return {
+        document,
+        slug,
+      };
+    });
+    return data;
+  })(require.context("../posts", true, /\.md$/)).sort(
+    (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
+  );
+
+  return { posts };
 };
 
 export default Index;

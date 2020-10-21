@@ -1,52 +1,94 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <div>
+    <div className="navigation-bg">
+      <div className="container">
+        <div className="navigation">
+          <div className="navigation-brand">
+            <Link href="/">
+              <a className="navigation-logo" href="/">
+                KAMRN
+              </a>
+            </Link>
+          </div>
+          <div className="navigation-menu">
+            <div>
+              <Link href="/">
+                <a href="/" className="navigation-link">
+                  Home
+                </a>
+              </Link>
+            </div>
+            <div>
+              <Link href="/about">
+                <a href="/about" className="navigation-link">
+                  About
+                </a>
+              </Link>
+            </div>
+            <div>
+              <Link href="/projects">
+                <a href="/projects" className="navigation-link">
+                  Projects
+                </a>
+              </Link>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://kameront.substack.com"
+                className="navigation-link"
+              >
+                Newsletter
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <style jsx>{`
-        ul {
-          margin-bottom: 0;
+        .navigation-bg {
+          background-color: #3286b3;
         }
-        ul {
-          padding: 0;
-          padding-bottom: 40px;
-          margin: 0;
-          list-style: none;
-          display: flex;
+
+        .navigation {
+          padding: 1em 2em;
+          display: grid;
+          grid-template-columns: 1fr auto;
           align-items: center;
-          justify-content: flex-end;
         }
-        li {
-          margin-left: 20px;
+        .navigation-menu {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 20px;
+          align-items: center;
+          text-align: center;
         }
-        a {
+
+        .navigation-logo {
           text-decoration: none;
+          color: #fff;
+          font-size: 1em;
+          letter-spacing: 5px;
+        }
+
+        .navigation-link {
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.9em;
+        }
+
+        @media screen and (max-width: 480px) {
+          .navigation {
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+          }
+          .navigation-menu {
+            text-align: left;
+            grid-template-columns: repeat(4, auto);
+          }
         }
       `}</style>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/" as="/">
-              <a href="/">Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work" as="/work">
-              <a href="/work">Work</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog" as="/blog">
-              <a href="/blog">Blog</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/archive" as="/archive">
-              <a href="/archive">Archive</a>
-            </Link>
-          </li>
-        </ul>
-      </nav>
     </div>
   );
 }
