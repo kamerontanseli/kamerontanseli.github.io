@@ -16,7 +16,7 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
-              <a target="_blank" href="https://dreamline.netlify.app">
+              <a target="_blank" href="/projects/dreamline">
                 4HWW Dreamline Tool
               </a>
             </h3>
