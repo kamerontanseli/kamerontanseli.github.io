@@ -25803,49 +25803,49 @@ var _jsxFileName = "/Users/kamerontanseli/Documents/kameron-blog/src/components/
 
 var Bio = function Bio() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-612941987" + " " + "bio-bg",
+    className: "jsx-2463336043" + " " + "bio-bg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 2
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-612941987" + " " + "container",
+    className: "jsx-2463336043" + " " + "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-612941987" + " " + "bio",
+    className: "jsx-2463336043" + " " + "bio",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-612941987" + " " + "bio-content",
+    className: "jsx-2463336043" + " " + "bio-content",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, "Welcome \uD83D\uDE4C\uD83C\uDFFB, my name's ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }, "Kameron Tanseli"), ". I'm a Growth Engineer, JavaScript developer, and entrepreneur."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -25854,14 +25854,14 @@ var Bio = function Bio() {
   }, "I'm currently focused with helping", " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     target: "_blank",
     href: "https://tray.io",
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
   }, "Tray.io"), " become the next biggest tech IPO."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -25869,7 +25869,7 @@ var Bio = function Bio() {
     __self: this
   }, "You can read more ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "/about",
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -25877,7 +25877,7 @@ var Bio = function Bio() {
     __self: this
   }, "about me"), ",", " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "/projects",
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -25885,14 +25885,14 @@ var Bio = function Bio() {
     __self: this
   }, "my projects"), ", and", " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "#articles",
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
   }, "my articles"), ".")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-612941987" + " " + "bio-image",
+    className: "jsx-2463336043" + " " + "bio-image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -25902,16 +25902,16 @@ var Bio = function Bio() {
     width: 100,
     src: "/static/profile.jpg",
     alt: "Kameron Tanseli",
-    className: "jsx-612941987",
+    className: "jsx-2463336043",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
   })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "612941987",
+    id: "2463336043",
     __self: this
-  }, ".bio-bg.jsx-612941987{background-color:#f5f5f5;}.bio.jsx-612941987{padding:2em;display:grid;grid-template-columns:1fr 100px;grid-gap:20px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.bio-content.jsx-612941987 a.jsx-612941987{color:#0073a7;}.bio-content.jsx-612941987 p.jsx-612941987{margin-bottom:1em;font-weight:200;}.bio-image.jsx-612941987 img.jsx-612941987{max-width:100%;border-radius:100px;}@media screen and (max-width:480px){.bio.jsx-612941987{grid-template-columns:1fr;}.bio-content.jsx-612941987{-webkit-order:2;-ms-flex-order:2;order:2;}.bio-image.jsx-612941987{-webkit-order:1;-ms-flex-order:1;order:1;text-align:center;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9rYW1lcm9udGFuc2VsaS9Eb2N1bWVudHMva2FtZXJvbi1ibG9nL3NyYy9jb21wb25lbnRzL0Jpby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5QmdCLEFBR2tDLEFBR2IsQUFPRSxBQUdJLEFBSUgsQUFLYSxBQUdsQixBQUdBLFlBeEJHLEVBT2YsQ0FPc0IsR0FKSixPQWJsQixBQUlrQyxDQWtCaEMsUUFSRixDQUlBLE1BT0UsQUFHb0IsZ0JBdkJOLEVBd0JkLFlBdkJtQiw2RkFDckIiLCJmaWxlIjoiL1VzZXJzL2thbWVyb250YW5zZWxpL0RvY3VtZW50cy9rYW1lcm9uLWJsb2cvc3JjL2NvbXBvbmVudHMvQmlvLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgQmlvID0gKCkgPT4gKFxuICA8ZGl2IGNsYXNzTmFtZT1cImJpby1iZ1wiPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImJpb1wiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJpby1jb250ZW50XCI+XG4gICAgICAgICAgPHA+XG4gICAgICAgICAgICBXZWxjb21lIPCfmYzwn4+7LCBteSBuYW1lJ3MgPHN0cm9uZz5LYW1lcm9uIFRhbnNlbGk8L3N0cm9uZz4uIEknbSBhIEdyb3d0aFxuICAgICAgICAgICAgRW5naW5lZXIsIEphdmFTY3JpcHQgZGV2ZWxvcGVyLCBhbmQgZW50cmVwcmVuZXVyLlxuICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8cD5cbiAgICAgICAgICAgIEknbSBjdXJyZW50bHkgZm9jdXNlZCB3aXRoIGhlbHBpbmd7XCIgXCJ9XG4gICAgICAgICAgICA8YSB0YXJnZXQ9XCJfYmxhbmtcIiBocmVmPVwiaHR0cHM6Ly90cmF5LmlvXCI+VHJheS5pbzwvYT4gYmVjb21lIHRoZSBuZXh0IGJpZ2dlc3QgdGVjaFxuICAgICAgICAgICAgSVBPLlxuICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8cD5cbiAgICAgICAgICAgIFlvdSBjYW4gcmVhZCBtb3JlIDxhIGhyZWY9XCIvYWJvdXRcIj5hYm91dCBtZTwvYT4se1wiIFwifVxuICAgICAgICAgICAgPGEgaHJlZj1cIi9wcm9qZWN0c1wiPm15IHByb2plY3RzPC9hPiwgYW5ke1wiIFwifVxuICAgICAgICAgICAgPGEgaHJlZj1cIiNhcnRpY2xlc1wiPm15IGFydGljbGVzPC9hPi5cbiAgICAgICAgICA8L3A+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJpby1pbWFnZVwiPlxuICAgICAgICAgIDxpbWcgd2lkdGg9ezEwMH0gc3JjPVwiL3N0YXRpYy9wcm9maWxlLmpwZ1wiIGFsdD1cIkthbWVyb24gVGFuc2VsaVwiIC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgLmJpby1iZyB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmNWY1ZjU7XG4gICAgICB9XG4gICAgICAuYmlvIHtcbiAgICAgICAgcGFkZGluZzogMmVtO1xuICAgICAgICBkaXNwbGF5OiBncmlkO1xuICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxMDBweDtcbiAgICAgICAgZ3JpZC1nYXA6IDIwcHg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICB9XG4gICAgICAuYmlvLWNvbnRlbnQgYSB7XG4gICAgICAgIGNvbG9yOiAjMDA3M2E3O1xuICAgICAgfVxuICAgICAgLmJpby1jb250ZW50IHAge1xuICAgICAgICBtYXJnaW4tYm90dG9tOiAxZW07XG4gICAgICAgIGZvbnQtd2VpZ2h0OiAyMDA7XG4gICAgICB9XG4gICAgICAuYmlvLWltYWdlIGltZyB7XG4gICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgICB9XG4gICAgICBAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA0ODBweCkge1xuICAgICAgICAuYmlvIHtcbiAgICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmcjtcbiAgICAgICAgfVxuICAgICAgICAuYmlvLWNvbnRlbnQge1xuICAgICAgICAgIG9yZGVyOiAyO1xuICAgICAgICB9XG4gICAgICAgIC5iaW8taW1hZ2Uge1xuICAgICAgICAgIG9yZGVyOiAxO1xuICAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9kaXY+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBCaW8iXX0= */\n/*@ sourceURL=/Users/kamerontanseli/Documents/kameron-blog/src/components/Bio.js */"));
+  }, ".bio-bg.jsx-2463336043{background-color:#f5f5f5;}.bio.jsx-2463336043{padding:2em;display:grid;grid-template-columns:1fr 100px;grid-gap:20px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.bio-content.jsx-2463336043 a.jsx-2463336043{color:#0073a7;}.bio-content.jsx-2463336043 p.jsx-2463336043{margin-bottom:1em;}.bio-image.jsx-2463336043 img.jsx-2463336043{max-width:100%;border-radius:100px;}@media screen and (max-width:480px){.bio.jsx-2463336043{grid-template-columns:1fr;}.bio-content.jsx-2463336043{-webkit-order:2;-ms-flex-order:2;order:2;}.bio-image.jsx-2463336043{-webkit-order:1;-ms-flex-order:1;order:1;text-align:center;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9rYW1lcm9udGFuc2VsaS9Eb2N1bWVudHMva2FtZXJvbi1ibG9nL3NyYy9jb21wb25lbnRzL0Jpby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5QmdCLEFBR2tDLEFBR2IsQUFPRSxBQUdJLEFBR0gsQUFLYSxBQUdsQixBQUdBLFlBdkJHLEVBT2YsQ0FNc0IsR0FIdEIsT0FiQSxBQUlrQyxDQWlCaEMsU0FKRixNQU9FLEFBR29CLGdCQXRCTixFQXVCZCxZQXRCbUIsNkZBQ3JCIiwiZmlsZSI6Ii9Vc2Vycy9rYW1lcm9udGFuc2VsaS9Eb2N1bWVudHMva2FtZXJvbi1ibG9nL3NyYy9jb21wb25lbnRzL0Jpby5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IEJpbyA9ICgpID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJiaW8tYmdcIj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJiaW9cIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiaW8tY29udGVudFwiPlxuICAgICAgICAgIDxwPlxuICAgICAgICAgICAgV2VsY29tZSDwn5mM8J+PuywgbXkgbmFtZSdzIDxzdHJvbmc+S2FtZXJvbiBUYW5zZWxpPC9zdHJvbmc+LiBJJ20gYSBHcm93dGhcbiAgICAgICAgICAgIEVuZ2luZWVyLCBKYXZhU2NyaXB0IGRldmVsb3BlciwgYW5kIGVudHJlcHJlbmV1ci5cbiAgICAgICAgICA8L3A+XG4gICAgICAgICAgPHA+XG4gICAgICAgICAgICBJJ20gY3VycmVudGx5IGZvY3VzZWQgd2l0aCBoZWxwaW5ne1wiIFwifVxuICAgICAgICAgICAgPGEgdGFyZ2V0PVwiX2JsYW5rXCIgaHJlZj1cImh0dHBzOi8vdHJheS5pb1wiPlRyYXkuaW88L2E+IGJlY29tZSB0aGUgbmV4dCBiaWdnZXN0IHRlY2hcbiAgICAgICAgICAgIElQTy5cbiAgICAgICAgICA8L3A+XG4gICAgICAgICAgPHA+XG4gICAgICAgICAgICBZb3UgY2FuIHJlYWQgbW9yZSA8YSBocmVmPVwiL2Fib3V0XCI+YWJvdXQgbWU8L2E+LHtcIiBcIn1cbiAgICAgICAgICAgIDxhIGhyZWY9XCIvcHJvamVjdHNcIj5teSBwcm9qZWN0czwvYT4sIGFuZHtcIiBcIn1cbiAgICAgICAgICAgIDxhIGhyZWY9XCIjYXJ0aWNsZXNcIj5teSBhcnRpY2xlczwvYT4uXG4gICAgICAgICAgPC9wPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiaW8taW1hZ2VcIj5cbiAgICAgICAgICA8aW1nIHdpZHRoPXsxMDB9IHNyYz1cIi9zdGF0aWMvcHJvZmlsZS5qcGdcIiBhbHQ9XCJLYW1lcm9uIFRhbnNlbGlcIiAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIC5iaW8tYmcge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjVmNWY1O1xuICAgICAgfVxuICAgICAgLmJpbyB7XG4gICAgICAgIHBhZGRpbmc6IDJlbTtcbiAgICAgICAgZGlzcGxheTogZ3JpZDtcbiAgICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMTAwcHg7XG4gICAgICAgIGdyaWQtZ2FwOiAyMHB4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgfVxuICAgICAgLmJpby1jb250ZW50IGEge1xuICAgICAgICBjb2xvcjogIzAwNzNhNztcbiAgICAgIH1cbiAgICAgIC5iaW8tY29udGVudCBwIHtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMWVtO1xuICAgICAgfVxuICAgICAgLmJpby1pbWFnZSBpbWcge1xuICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICAgICAgfVxuICAgICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNDgwcHgpIHtcbiAgICAgICAgLmJpbyB7XG4gICAgICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7XG4gICAgICAgIH1cbiAgICAgICAgLmJpby1jb250ZW50IHtcbiAgICAgICAgICBvcmRlcjogMjtcbiAgICAgICAgfVxuICAgICAgICAuYmlvLWltYWdlIHtcbiAgICAgICAgICBvcmRlcjogMTtcbiAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gIDwvZGl2PlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgQmlvIl19 */\n/*@ sourceURL=/Users/kamerontanseli/Documents/kameron-blog/src/components/Bio.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Bio);
