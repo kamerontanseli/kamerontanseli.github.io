@@ -39,7 +39,6 @@ const Bio = () => (
       }
       .bio-content p {
         margin-bottom: 1em;
-        font-weight: 200;
       }
       .bio-image img {
         max-width: 100%;
