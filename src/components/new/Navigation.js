@@ -28,6 +28,13 @@ export default function Navigation() {
               </Link>
             </div>
             <div>
+              <Link href="/metrics">
+                <a href="/metrics" className="navigation-link">
+                  Open Metrics
+                </a>
+              </Link>
+            </div>
+            <div>
               <Link href="/projects">
                 <a href="/projects" className="navigation-link">
                   Projects
@@ -57,12 +64,14 @@ export default function Navigation() {
           grid-template-columns: 1fr auto;
           align-items: center;
         }
+
         .navigation-menu {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-gap: 20px;
+          display: flex;
           align-items: center;
-          text-align: center;
+        }
+
+        .navigation-menu a {
+          margin-left: 20px;
         }
 
         .navigation-logo {
@@ -84,8 +93,11 @@ export default function Navigation() {
             grid-gap: 10px;
           }
           .navigation-menu {
-            text-align: left;
-            grid-template-columns: repeat(4, auto);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+          }
+          .navigation-menu a {
+            margin-left: 0;
           }
         }
       `}</style>

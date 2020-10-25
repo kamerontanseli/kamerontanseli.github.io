@@ -16,6 +16,22 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
+              <a target="_blank" href="https://publicdash.com">
+                PublicDash.com
+              </a>
+            </h3>
+            <p>
+              Public Embeddable Dashboards to increase public accountability to
+              reaching key metrics.
+            </p>
+            <p>
+              I built the MVP in 1 evening using Node, Mongo, and Edge
+              Templates. You can checkout{" "}
+              <a href="/metrics">my open metrics page</a>.
+            </p>
+          </div>
+          <div className="projects-project">
+            <h3>
               <a target="_blank" href="/projects/dreamline">
                 4HWW Dreamline Tool
               </a>

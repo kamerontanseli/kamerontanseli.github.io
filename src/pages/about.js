@@ -33,7 +33,7 @@ const About = ({}) => {
                 Engineer, JavaScript developer, and entrepreneur.
               </p>
               <p>
-                I'm currently focused with helping{" "}
+                I'm currently focused on helping{" "}
                 <a target="_blank" href="https://tray.io">
                   Tray.io
                 </a>{" "}
@@ -68,21 +68,21 @@ const About = ({}) => {
                   Motivii
                 </a>{" "}
                 as their Lead Front End Engineer. Motivii is still a company
-                near to my heart as it was where I learnt the most about
+                near to my heart as it was where I learned the most about
                 startups.
               </p>
               <p>
                 With a team of four (Nick, Rick, Eamon, and I) we were able to
                 completely rewrite the entire product, add SAAS onboarding,
-                implement lean startup metric driven dashboards, add enterprise
+                implement lean startup metric-driven dashboards, add enterprise
                 features, retain existing enterprise customers, and create a
                 self-serve onboarding flow to gain mid-level customers.
               </p>
               <p>
                 It's a testament to time that we were able to create a product
-                that customers loved. Even to this day, though there is no
-                engineers maintaining the product it's still being used by
-                enterprise companies.
+                that customers loved. Even to this day, though no engineers are
+                maintaining the product it's still being used by enterprise
+                companies.
               </p>
               <p>
                 I left Motivii after a year to join{" "}
@@ -91,51 +91,50 @@ const About = ({}) => {
                 </a>{" "}
                 as one of their Senior Front End Engineers. Flux was my opening
                 into the world of enterprise integrations (*cough* Tray). Even
-                though my job title stated front end I actually spent more time
-                looking at terminals and writing Node.js.
+                though my job title stated front end I spent more time looking
+                at terminals and writing Node.js.
               </p>
               <p>
-                The most memorable time for me was definitely helping intergrate
-                Flux into KFC's Kiosk Servers. Although I can't say much on the
-                matter (I don't like lawsuits) it was definitely challenging and
-                really opened up my eyes to how important cross-company data
-                management really is.
+                The most memorable time for me was helping integrate Flux into
+                KFC's Kiosk Servers. Although I can't say much on the matter (I
+                don't like lawsuits) it was challenging and opened up my eyes to
+                how important cross-company data management is.
               </p>
               <p>
-                After an amazing company holiday to the Canary islands and a
-                quick getaway to Marrakech for my birthday I left Flux. I
+                After an amazing company holiday to the Canary Islands and a
+                quick getaway to Marrakech for my birthday, I left Flux. I
                 decided it was time to take a few risks...
               </p>
               <p>
                 I've always loved the idea of running a micro-sass company,
                 especially around learning or productivity, so when I had the
                 idea for a micro-studying app that chunks up notes and sends you
-                parts of them everyday I got right to work.
+                parts of them every day I got right to work.
               </p>
               <p>
-                After a solid month of work I created{" "}
+                After a solid month of work, I created{" "}
                 <a
                   target="_blank"
                   href="https://www.producthunt.com/posts/cycle-notes"
                 >
                   Cycle Notes
                 </a>
-                . I wasn't really expecting it to do that well on ProductHunt
-                but It actually had over 300 visitors in a single day. Not only
-                that but I also had around 50 active returning users days later.
+                . I wasn't expecting it to do that well on ProductHunt but it
+                had over 300 visitors in a single day. Not only that but I also
+                had around 50 active returning users days later.
               </p>
               <p>
                 After launching Cycle Notes I took a 2 week holiday to Portugal
-                to get some much needed rest time. On a side note, if you
-                haven't already you should definitely check out Porto. It's an
-                upcoming tech startup scene (looking at you{" "}
+                to get some much-needed rest time. On a side note, if you
+                haven't already you should check out Porto. It's an upcoming
+                tech startup scene (looking at you{" "}
                 <a target="_blank" href="https://www.surfncode.io/">
                   SurfNCode
                 </a>
                 ).
               </p>
               <p>
-                Upon my return to the UK I was recommended to apply for{" "}
+                Upon my return to the UK, I was recommended to apply for{" "}
                 <a target="_blank" href="https://zinc.vc">
                   Zinc VC
                 </a>{" "}
@@ -149,35 +148,35 @@ const About = ({}) => {
                 . To which I immediately did (I was unemployed so YOLO).
               </p>
               <p>
-                The first stages of the Zinc interview went really smoothly.
-                Bunch of questions about why'd you want to help old people and
-                how you'd build that sort of thing etc etc. The real exciting
-                stuff was the in-person days at their office.
+                The first stages of the Zinc interview went smoothly. Bunch of
+                questions about why'd you want to help old people and how you'd
+                build that sort of thing etc. The real exciting stuff was the
+                in-person days at their office.
               </p>
               <p>
                 Now I'm a pretty confident person (or I hope I appear to be).
-                But pitching to a group of 20 people with a last minute idea
+                But pitching to a group of 20 people with a last-minute idea
                 (thank you life for giving a team that didn't get along) for a
                 support app for old people was nerve-wracking and downright
                 painful.
               </p>
               <p>
-                Safe to say I didn't get accepted into the founders program :(.
+                Safe to say I didn't get accepted into the founder's program :(.
                 But fate always has a way with these things...
               </p>
               <p>
                 I knew that I didn't want to be just another engineer again. The
                 thought of having more of an impact on a startup was too
-                irrestible of a job to pass up. I also knew based on my work
-                history that the times where I did the best work was when I had
+                irresistible of a job to pass up. I also knew based on my work
+                history that the times where I did the best work were when I had
                 access to company metrics and the freedom to execute on my own
                 ideas.
               </p>
               <p>
-                As mentioned earlier fate works in mysterious ways. In my GMail
-                I recieved an interview request from Tray.io for a Senior Growth
+                As mentioned earlier fate works in mysterious ways. In my Gmail,
+                I received an interview request from Tray.io for a Senior Growth
                 Engineer Role. Not only did I get to keep writing JavaScript but
-                now I got to do it with the freedom of executing on my own ideas
+                now I got to do it with the freedom of executing my ideas
                 and operating in a lean startup environment while improving the
                 company's baseline metrics.
               </p>

@@ -8,7 +8,7 @@ const Bio = () => (
             Engineer, JavaScript developer, and entrepreneur.
           </p>
           <p>
-            I'm currently focused with helping{" "}
+            I'm currently focused on helping{" "}
             <a target="_blank" href="https://tray.io">Tray.io</a> become the next biggest tech
             IPO.
           </p>
