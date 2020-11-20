@@ -1,7 +1,7 @@
 ---
 author: Kameron Tanseli
 date: '2019-12-24T13:56:26.370Z'
-hero_image: ../static/js-cover.png
+hero_image: /static/js-cover.png
 title: 'The rules of reusable components'
 byline: "I spend a lot of my time developing new reusable UI components."
 ---

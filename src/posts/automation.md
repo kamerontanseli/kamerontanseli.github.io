@@ -1,7 +1,7 @@
 ---
 author: Kameron Tanseli
 date: '2019-12-28T20:37:08.019Z'
-hero_image: ../static/posts/automation-cover.jpg
+hero_image: /static/posts/automation-cover.jpg
 title: 'Tools I use to automate my life'
 byline: "Over the last few years I've collected a variety of tools to help cut down my wasted time. Here's a few tools that I found incredibly helpful."
 ---

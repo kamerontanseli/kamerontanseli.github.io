@@ -1,7 +1,7 @@
 ---
 author: Kameron Tanseli
 date: '2020-04-27T22:04:31.000Z'
-hero_image: ../static/posts/Screenshot-2020-04-27-at-22.17.11-1.png
+hero_image: /static/posts/Screenshot-2020-04-27-at-22.17.11-1.png
 title: "Building a No-code 30 Day Challenge Website"
 byline: "During lockdown I've been giving myself a few 30 days challenges"
 ---

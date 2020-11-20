@@ -9,11 +9,15 @@ const BlogDetail = ({ post }) => (
     <Meta
       title={`${post.data.title}`}
       description={post.data.byline}
+      image={post.data.hero_image}
     />
     <Navigation />
     <div className="container">
       <div className="content">
         <article>
+          {post.data.hero_image && (
+            <div className="content-header" style={{ backgroundImage: `url(${post.data.hero_image})` }} alt={post.data.title} />
+          )}
           <h1 className="content-title">{post.data.title}</h1>
           <ReactMarkdown source={post.content} />
           <iframe
@@ -31,6 +35,12 @@ const BlogDetail = ({ post }) => (
     <style jsx>{`
       .content {
         padding: 2em;
+      }
+      .content-header {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
       }
       .content-title {
         margin-top: 0;

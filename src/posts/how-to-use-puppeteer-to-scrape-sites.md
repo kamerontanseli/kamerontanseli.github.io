@@ -1,7 +1,7 @@
 ---
 author: Kameron Tanseli
 date: '2020-04-29T20:07:20.000Z'
-hero_image: ../static/posts/5b2d227f688967b0997ea7d0a0a4080f.png
+hero_image: /static/posts/5b2d227f688967b0997ea7d0a0a4080f.png
 title: "Getting Started with Puppeteer"
 byline: "In order to scrape a website in 2020 we need to make sure we're using something that can click, tap and scroll as websites have become a lot more dynamic since 1999."
 ---

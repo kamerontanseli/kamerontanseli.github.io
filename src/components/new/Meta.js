@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 
-export default function Meta({ title, description }) {
+export default function Meta({ title, description, image }) {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -25,13 +25,13 @@ export default function Meta({ title, description }) {
         <meta name="twitter:creator" content="@KameronTanseli" />
         <meta
           name="twitter:image"
-          content="https://kamrn.com/static/meta.png"
+          content={`https://kamrn.com${image || '/static/meta.png'}`} 
         ></meta>
 
         <meta property="og:title" content={title} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://kamrn.com" />
-        <meta property="og:image" content="https://kamrn.com/static/meta.png" />
+        <meta property="og:image" content={`https://kamrn.com${image || '/static/meta.png'}`} />
         <meta property="og:description" content={description} />
         <script
           async

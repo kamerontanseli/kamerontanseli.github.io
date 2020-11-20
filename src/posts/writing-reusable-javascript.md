@@ -1,7 +1,7 @@
 ---
 author: Kameron Tanseli
 date: '2019-12-24T13:56:26.370Z'
-hero_image: ../static/js-cover.png
+hero_image: /static/js-cover.png
 title: 'Writing reusable JavaScript (Revised)'
 byline: "Don’t reinvent the wheel, just realign it. — Anthony J. D’Angelo"
 ---
