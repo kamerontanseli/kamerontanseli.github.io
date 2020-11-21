@@ -3,7 +3,7 @@ author: Kameron Tanseli
 date: '2020-11-20T20:53:29Z'
 hero_image: /static/posts/the-easiest-sign-up-flow-ever.png
 title: 'The Easiest Sign Up Flow Ever'
-byline: ""
+byline: "Sometimes you come across a product that turns the notion of onboarding on its head. qrmenucreator.com was that product for me and here's why..."
 ---
 
 Sometimes you come across a product that turns the notion of onboarding on its head. [qrmenucreator.com](http://qrmenucreator.com/) was that product for me.
