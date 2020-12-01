@@ -14,6 +14,20 @@ const Projects = () => (
       <div className="content">
         <h1 className="content-title">Projects: </h1>
         <div className="projects">
+        <div className="projects-project">
+            <h3>
+              <a target="_blank" href="http://onepageday.co.uk">
+                Onepageday.co.uk
+              </a>
+            </h3>
+            <p>
+              Daily email newsletter curated from uploading your own notes.
+            </p>
+            <p>
+              Build this during a rainy Monday evening as I wanted a way 
+              to easily study my notes over time.
+            </p>
+          </div>
           <div className="projects-project">
             <h3>
               <a target="_blank" href="https://publicdash.com">
@@ -26,7 +40,7 @@ const Projects = () => (
             </p>
             <p>
               I built the MVP in 1 evening using Node, Mongo, and Edge
-              Templates. You can checkout{" "}
+              Templates. You can check it out on{" "}
               <a href="/metrics">my open metrics page</a>.
             </p>
           </div>
@@ -69,7 +83,7 @@ const Projects = () => (
           <div className="projects-project">
             <h3>londonremotework.com</h3>
             <p>
-              In the midst of a nationwide lockdown and increasing uneployment.
+              In the midst of a nationwide lockdown and increasing unemployment.
               I decided to use tray.io and Next.js to create an ad-free job site
               specifically for remote jobs in the UK.
             </p>
