@@ -18,6 +18,25 @@ export default function Meta({ title, description, image }) {
         <title>{title}</title>
         <meta name="description" content={description}></meta>
 
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/static/favicon_ico/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/favicon_ico/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/favicon_ico/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/static/favicon_ico/site.webmanifest" />
+
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@KameronTanseli" />
         <meta name="twitter:title" content={title} />
@@ -25,13 +44,16 @@ export default function Meta({ title, description, image }) {
         <meta name="twitter:creator" content="@KameronTanseli" />
         <meta
           name="twitter:image"
-          content={`https://kamrn.com${image || '/static/meta.png'}`} 
+          content={`https://kamrn.com${image || "/static/meta.png"}`}
         ></meta>
 
         <meta property="og:title" content={title} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://kamrn.com" />
-        <meta property="og:image" content={`https://kamrn.com${image || '/static/meta.png'}`} />
+        <meta
+          property="og:image"
+          content={`https://kamrn.com${image || "/static/meta.png"}`}
+        />
         <meta property="og:description" content={description} />
         <script
           async
