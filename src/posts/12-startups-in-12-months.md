@@ -29,6 +29,12 @@ His blog lead me onto numerous other blogs which have also tried this challenge:
 
 So now that I've announced this challenge, it's time to get to work. The first startup will launch in the new year. Make sure you follow me on [twitter](https://twitter.com/KameronTanseli) for updates!
 
-### Month 1
+### Month 1) Readercatch.com
 
-TBD
+**Started:** 1st December 2020
+
+**Launched:** TBD
+
+Drive email signups with an easy to install inline email signup widget
+
+[https://readercatch.com/](https://readercatch.com/)
