@@ -56,6 +56,7 @@ export default function Meta({ title, description, image }) {
         />
         <meta property="og:description" content={description} />
         <script
+          defer
           data-bar-id="f68ae112-4bc2-4f3f-af7b-714b62ebfd36"
           src="https://app.readercatch.com/banner.js"
         ></script>
