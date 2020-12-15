@@ -16,7 +16,7 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
-              <a target="_blank" href="https://publicdash.com">
+              <a target="_blank" href="https://readercatch.com">
                 Readercatch.com
               </a>
             </h3>
