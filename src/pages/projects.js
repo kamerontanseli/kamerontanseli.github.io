@@ -14,18 +14,19 @@ const Projects = () => (
       <div className="content">
         <h1 className="content-title">Projects: </h1>
         <div className="projects">
-        <div className="projects-project">
+          <div className="projects-project">
             <h3>
-              <a target="_blank" href="http://onepageday.co.uk">
-                Onepageday.co.uk
+              <a target="_blank" href="https://publicdash.com">
+                Readercatch.com
               </a>
             </h3>
             <p>
-              Daily email newsletter curated from uploading your own notes.
+              Convert visitors into customers with high-converting email
+              banner pop-ups.
             </p>
             <p>
-              Build this during a rainy Monday evening as I wanted a way 
-              to easily study my notes over time.
+              Part of the 12 startups challenge.
+              <a href="/blog/readercatch">See progress here</a>.
             </p>
           </div>
           <div className="projects-project">

@@ -35,6 +35,6 @@ So now that I've announced this challenge, it's time to get to work. The first s
 
 **Launched:** TBD
 
-Drive email signups with an easy to install inline email signup widget
+Create high-converting email banner pop-ups in less than a minute.
 
-[https://readercatch.com/](https://readercatch.com/)
+[Read about it's progress here](/blog/readercatch)
