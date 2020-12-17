@@ -33,7 +33,7 @@ So now that I've announced this challenge, it's time to get to work. The first s
 
 **Started:** 1st December 2020
 
-**Launched:** TBD
+**Launched:** 18th December 2020
 
 Create high-converting email banner pop-ups in less than a minute.
 
