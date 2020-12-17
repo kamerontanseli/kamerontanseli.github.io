@@ -45,7 +45,6 @@ const Articles = ({ posts }) => (
           }
         }
       `}</style>
-      <h1 className="articles-title">Articles:</h1>
       <div id="articles" className="articles-posts">
         {posts.map((post) => (
           <div key={post.slug} className="articles-post">

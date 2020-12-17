@@ -3,19 +3,16 @@ const Bio = () => (
     <div className="container">
       <div className="bio">
         <div className="bio-content">
+          <p>Howdy 🤠, I'm Kameron. A Growth Engineer/Bootstrapped Maker.</p>
           <p>
-            Welcome 🙌🏻, my name's <strong>Kameron Tanseli</strong>. I'm a Growth
-            Engineer, JavaScript developer, and entrepreneur.
-          </p>
-          <p>
-            I'm currently focused on helping{" "}
-            <a target="_blank" href="https://tray.io">Tray.io</a> become the next biggest tech
-            IPO.
-          </p>
-          <p>
-            You can read more <a href="/about">about me</a>,{" "}
-            <a href="/projects">my projects</a>, and{" "}
-            <a href="#articles">my articles</a>.
+            Currently focused on growing{" "}
+            <a target="_blank" href="https://tray.io">
+              Tray.io
+            </a>{" "}
+            and building{" "}
+            <a href="/blog/12-startups-in-12-months">
+              12 startups in 12 months
+            </a>
           </p>
         </div>
         <div className="bio-image">

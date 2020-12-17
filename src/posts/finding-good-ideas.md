@@ -25,9 +25,9 @@ Okay, the last two I'm acting on but you're free to take the rest :)
 
 ## Generating your own Ideas
 
-In the past [I have talked about how to come up with better niche ideas](/if-you-want-to-have-great-startup-ideas-then-be-a-weirdo/). Since then I've read up on a lot of new tactics just solely based on analysis. So here's what I found:
+In the past [I have talked about how to come up with better niche ideas](/blog/if-you-want-to-have-great-startup-ideas-then-be-a-weirdo/). Since then I've read up on a lot of new tactics just solely based on analysis. So here's what I found:
 
-*   Unbundle existing platforms ([Zapier](/first-it-was-craiglist-next-its-zapier/), [Craigslist](https://thegongshow.tumblr.com/post/345941486/the-spawn-of-craigslist-like-most-vcs-that-focus), [AWS](https://www.tclauson.com/2019/09/11/Unbundling-AWS.html) etc)
+*   Unbundle existing platforms ([Zapier](/blog/first-it-was-craiglist-next-its-zapier/), [Craigslist](https://thegongshow.tumblr.com/post/345941486/the-spawn-of-craigslist-like-most-vcs-that-focus), [AWS](https://www.tclauson.com/2019/09/11/Unbundling-AWS.html) etc)
 *   [Unique and interesting domain names](https://www.deepsouthventures.com/i-sell-onions-on-the-internet/)
 *   [Analysing market numbers with GTrends and FB Ads](https://tim.blog/2011/09/24/how-to-create-a-million-dollar-business-this-weekend-examples-appsumo-mint-chihuahuas/)
 *   Turn popular book methods into apps (e.g: [5 Minute Journal](https://apps.apple.com/gb/app/five-minute-journal/id1062945251))

@@ -21,13 +21,6 @@ export default function Navigation() {
               </Link>
             </div>
             <div>
-              <Link href="/about">
-                <a href="/about" className="navigation-link">
-                  About
-                </a>
-              </Link>
-            </div>
-            <div>
               <Link href="/metrics">
                 <a href="/metrics" className="navigation-link">
                   Open Metrics
@@ -94,7 +87,10 @@ export default function Navigation() {
           }
           .navigation-menu {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, auto);
+          }
+          .navigation-menu > div {
+            text-align: left;
           }
           .navigation-menu a {
             margin-left: 0;
