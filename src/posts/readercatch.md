@@ -48,4 +48,4 @@ _I've highlighted the important points in bold below_
 
 ## Friday 18th December
 
-- Launched on ProductHunt
+- Launched on [ProductHunt](https://www.producthunt.com/posts/readercatch)

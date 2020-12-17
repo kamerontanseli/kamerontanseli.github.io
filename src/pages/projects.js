@@ -81,21 +81,6 @@ const Projects = () => (
               Twitter, Google, and Facebook.
             </p>
           </div>
-          <div className="projects-project">
-            <h3>londonremotework.com</h3>
-            <p>
-              In the midst of a nationwide lockdown and increasing unemployment.
-              I decided to use tray.io and Next.js to create an ad-free job site
-              specifically for remote jobs in the UK.
-            </p>
-          </div>
-          <div className="projects-project">
-            <h3>tweet2gram.com</h3>
-            <p>
-              Just another twitter screenshot tool. P.S: I loved getting cease
-              and decist emails from Instagram.
-            </p>
-          </div>
         </div>
       </div>
     </div>
