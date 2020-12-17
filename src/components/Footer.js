@@ -3,7 +3,8 @@ const Footer = () => (
     <style jsx>{`
       ul {
         display: grid;
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: 1fr auto auto auto;
+        grid-gap: 10px;
         list-style: none;
         margin: 0;
         padding: 1em;
@@ -17,7 +18,7 @@ const Footer = () => (
 
       @media screen and (max-width: 480px) {
         ul {
-          grid-template-columns: repeat(2, auto);
+          grid-template-columns: 1fr;
         }
       }
     `}</style>
@@ -48,15 +49,6 @@ const Footer = () => (
           href="mailto:kamerontanseliwork@gmail.com"
         >
           Email
-        </a>
-      </li>
-      <li>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://kameront.substack.com/"
-        >
-          Newsletter
         </a>
       </li>
     </ul>

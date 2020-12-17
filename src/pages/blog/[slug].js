@@ -25,14 +25,6 @@ const BlogDetail = ({ post }) => {
             )}
             <h1 className="content-title">{post.data.title}</h1>
             <ReactMarkdown source={post.content} />
-            <iframe
-              src="https://kameront.substack.com/embed"
-              width="100%"
-              height="320"
-              style={{ border: 0 }}
-              frameBorder="0"
-              scrolling="no"
-            ></iframe>
           </article>
         </div>
       </div>

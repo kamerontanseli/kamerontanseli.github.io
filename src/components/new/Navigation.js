@@ -34,15 +34,6 @@ export default function Navigation() {
                 </a>
               </Link>
             </div>
-            <div>
-              <a
-                target="_blank"
-                href="https://kameront.substack.com"
-                className="navigation-link"
-              >
-                Newsletter
-              </a>
-            </div>
           </div>
         </div>
       </div>
