@@ -2,7 +2,7 @@
 author: Kameron Tanseli
 date: "2020-12-15T11:29:45Z"
 hero_image: /static/posts/readercatch.png
-title: "Readercatch"
+title: "Startup 1/12 - Readercatch.com"
 byline: "Create high-converting email banner pop-ups in less than a minute."
 ---
 
@@ -39,3 +39,13 @@ _I've highlighted the important points in bold below_
 - **I've already pivoted**. Readercatch used to be an email widget that got installed within an article but I decided to scrap that idea as it was too complex and niche to sell to startups.
 
 - **Marketing site is nearly finished**. [The marketing site](https://readercatch.com/) is 90% done, just need to film a video of me setting up a banner and it's ready to go.
+
+## Thursday 17th December
+
+- Launched to [/r/GrowthHacking](https://www.reddit.com/r/GrowthHacking/comments/kevufp/i_made_a_free_email_banner_tool_to_help/) and [/r/Blogging](https://www.reddit.com/r/Blogging/comments/kezf2a/what_is_the_best_way_to_build_an_email_list_so/gg610ex?utm_source=share&utm_medium=web2x&context=3) subreddits
+
+- 29+ Banners Created
+
+## Friday 18th December
+
+- Launched on ProductHunt
