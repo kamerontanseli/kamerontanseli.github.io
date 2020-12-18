@@ -50,8 +50,11 @@ const BlogDetail = ({ post }) => {
           padding-left: 1em;
           border-left: 5px solid grey;
         }
-        .content :global(blockquote > p) {
+        .content :global(blockquote > p:first-child) {
           margin: 0;
+        }
+        .content :global(blockquote > p:last-child) {
+          margin-bottom: 0;
         }
         .content :global(a) {
           color: #0073a7;
