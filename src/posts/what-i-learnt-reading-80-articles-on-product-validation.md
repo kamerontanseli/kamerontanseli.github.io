@@ -3,7 +3,7 @@ author: Kameron Tanseli
 date: '2021-01-04T07:17:31Z'
 hero_image: /static/posts/what-i-learned-reading-80-articles-on-product-validation.jpg
 title: 'What I Learnt Reading 80 Articles On Product Validation'
-byline: ""
+byline: "I created a site called validationguide.com (using Ghost) to host all this research. Upon researching the topic, I realized something, Almost all product validation methods for successful bootstrapped companies are the same..."
 ---
 
 While I had some time off over Christmas I decided it would be useful to read up on product validation. Especially after the launch of my first startup, Readercatch, which although launching quite successfully on ProductHunt failed to generate any meaningful conversion.
