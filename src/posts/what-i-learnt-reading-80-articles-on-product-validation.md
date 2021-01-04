@@ -2,7 +2,7 @@
 author: Kameron Tanseli
 date: '2021-01-04T07:17:31Z'
 hero_image: /static/posts/what-i-learned-reading-80-articles-on-product-validation.jpg
-title: 'What I Learned Reading 80 Articles On Product Validation'
+title: 'What I Learnt Reading 80 Articles On Product Validation'
 byline: ""
 ---
 
