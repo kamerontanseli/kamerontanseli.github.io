@@ -16,13 +16,24 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
+              <a href="/clean-meal-generator">
+                Clean Meal Generator
+              </a>
+            </h3>
+            <p>
+              Creates a random clean meal fit with 3 portions of vegetables, 1
+              protein source, and 1 good fat source.
+            </p>
+          </div>
+          <div className="projects-project">
+            <h3>
               <a target="_blank" href="https://readercatch.com">
                 Readercatch.com
               </a>
             </h3>
             <p>
-              Convert visitors into customers with high-converting email
-              banner pop-ups.
+              Convert visitors into customers with high-converting email banner
+              pop-ups.
             </p>
             <p>
               Part of the 12 startups challenge.
