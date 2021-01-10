@@ -16,13 +16,15 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
-              <a href="/clean-meal-generator">
-                Clean Meal Generator
+              <a target="_blank" href="https://ikigai-tool.netlify.app/">
+                Ikigai Online Tool
               </a>
             </h3>
             <p>
-              Creates a random clean meal fit with 3 portions of vegetables, 1
-              protein source, and 1 good fat source.
+              Ikigai is the Japanese concept that means "a reason for being."
+              The word refers to having a meaningful direction or purpose in
+              life. I created an online tool to help me reflect and answer this
+              very question.
             </p>
           </div>
           <div className="projects-project">
