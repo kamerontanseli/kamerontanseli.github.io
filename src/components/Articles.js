@@ -6,7 +6,7 @@ function pad(n) {
 
 function toDDMMYYY(date) {
   const d = new Date(date);
-  return `${pad(d.getDate())}-${pad(d.getMonth())}-${pad(d.getFullYear())}`;
+  return `${pad(d.getDate())}-${pad(d.getMonth() + 1)}-${pad(d.getFullYear())}`;
 }
 
 const Articles = ({ posts }) => (
