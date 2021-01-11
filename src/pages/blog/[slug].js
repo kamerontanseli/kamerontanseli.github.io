@@ -27,6 +27,16 @@ const BlogDetail = ({ post }) => {
             <ReactMarkdown source={post.content} />
           </article>
         </div>
+        <iframe
+          src="https://kameront.substack.com/embed"
+          width="100%"
+          height={320}
+          style={{
+            background: "white",
+          }}
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
       </div>
       <Footer />
       <style jsx>{`
