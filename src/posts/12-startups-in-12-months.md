@@ -29,7 +29,7 @@ His blog lead me onto numerous other blogs which have also tried this challenge:
 
 So now that I've announced this challenge, it's time to get to work. The first startup will launch in the new year. Make sure you follow me on [twitter](https://twitter.com/KameronTanseli) for updates!
 
-### Month 1) Readercatch.com
+### Month 1) readercatch.com
 
 **Started:** 1st December 2020
 
@@ -38,3 +38,12 @@ So now that I've announced this challenge, it's time to get to work. The first s
 Create high-converting email banner pop-ups in less than a minute.
 
 [Read about it's progress here](/blog/readercatch)
+
+### Month 2) leananalyticscanvas.com
+
+**Started:** 15th Jan 2021
+**Launched:** 18th Jan 2021
+
+A structured framework to help validate customer problems, improve metrics, and determine success.
+
+[Check it out here](https://leananalyticscanvas.com/)

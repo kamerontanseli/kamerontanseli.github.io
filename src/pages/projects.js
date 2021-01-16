@@ -16,6 +16,20 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
+              <a target="_blank" href="https://leananalyticscanvas.com">
+                Lean Analytics Canvas
+              </a>
+            </h3>
+            <p>
+              Lean Analytics by Avinash Kaushik aims to help you create a
+              sustainable way to pick metrics that matter by tying them to
+              fundamental business problems, creating hypotheses you can test
+              and driving change in the business from the learnings you
+              identify.
+            </p>
+          </div>
+          <div className="projects-project">
+            <h3>
               <a target="_blank" href="https://ikigai-tool.netlify.app/">
                 Ikigai Online Tool
               </a>
