@@ -6,8 +6,10 @@ const Projects = () => (
   <>
     <Meta
       title={`Kameron Tanseli | Projects`}
-      description={`Hi 🙌🏻, my name's Kameron Tanseli I'm a Growth
-                Engineer, JavaScript developer, and entrepreneur. I'm currently focused with helping Tray.io become the next biggest tech IPO.`.trim()}
+      description={`
+      Kameron Tanseli's Growth Engineering Blog. Kameron is a Senior Growth Engineer at Tray.io ($600m+), 
+      investor (getchip.uk, getcoconut.com), and IndieHacker (293 upvotes and counting).
+      `.trim()}
     />
     <Navigation />
     <div className="container">
@@ -139,7 +141,7 @@ const Projects = () => (
       .projects-project p a {
         color: #000;
         font-weight: 600;
-      } 
+      }
       @media screen and (max-width: 480px) {
         .projects {
           grid-template-columns: 1fr;

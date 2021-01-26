@@ -8,8 +8,10 @@ const Metrics = ({}) => {
     <>
       <Meta
         title={`Kameron Tanseli | Open Metrics`}
-        description={`Hi 🙌🏻, my name's Kameron Tanseli I'm a Growth
-                Engineer, JavaScript developer, and entrepreneur. I'm currently focused with helping Tray.io become the next biggest tech IPO.`.trim()}
+        description={`
+        Kameron Tanseli's Growth Engineering Blog. Kameron is a Senior Growth Engineer at Tray.io ($600m+), 
+        investor (getchip.uk, getcoconut.com), and IndieHacker (293 upvotes and counting).
+        `.trim()}
       />
       <Navigation />
       <div className="iframe-container">
