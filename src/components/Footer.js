@@ -13,7 +13,7 @@ const Footer = () => (
         font-size: 0.8em;
       }
       a {
-        color: #0073a7;
+        color: #000;
       }
 
       @media screen and (max-width: 480px) {

@@ -67,7 +67,8 @@ const BlogDetail = ({ post }) => {
           margin-bottom: 0;
         }
         .content :global(a) {
-          color: #0073a7;
+          color: #000;
+          font-weight: 600;
         }
         .content :global(img) {
           max-width: 100%;

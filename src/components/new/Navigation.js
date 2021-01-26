@@ -21,16 +21,9 @@ export default function Navigation() {
               </Link>
             </div>
             <div>
-              <Link href="/metrics">
-                <a href="/metrics" className="navigation-link">
-                  Open Metrics
-                </a>
-              </Link>
-            </div>
-            <div>
               <Link href="/projects">
                 <a href="/projects" className="navigation-link">
-                  Projects
+                  Apps
                 </a>
               </Link>
             </div>
@@ -48,7 +41,7 @@ export default function Navigation() {
       </div>
       <style jsx>{`
         .navigation-bg {
-          background-color: #3286b3;
+          background-color: #fff;
         }
 
         .navigation {
@@ -69,13 +62,13 @@ export default function Navigation() {
 
         .navigation-logo {
           text-decoration: none;
-          color: #fff;
+          color: #000;
           font-size: 1em;
           letter-spacing: 5px;
         }
 
         .navigation-link {
-          color: #fff;
+          color: #000;
           text-decoration: none;
           font-size: 0.9em;
         }

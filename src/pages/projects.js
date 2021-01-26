@@ -52,7 +52,7 @@ const Projects = () => (
               pop-ups.
             </p>
             <p>
-              Part of the 12 startups challenge.
+              Part of the 12 startups challenge.{" "}
               <a href="/blog/readercatch">See progress here</a>.
             </p>
           </div>
@@ -130,12 +130,16 @@ const Projects = () => (
         margin-top: 0;
       }
       .projects-project h3 a {
-        color: #0073a7;
+        color: #000;
         text-decoration: none;
       }
       .projects-project p {
         font-size: 0.8em;
       }
+      .projects-project p a {
+        color: #000;
+        font-weight: 600;
+      } 
       @media screen and (max-width: 480px) {
         .projects {
           grid-template-columns: 1fr;

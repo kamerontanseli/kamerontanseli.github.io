@@ -33,7 +33,7 @@ const Articles = ({ posts }) => (
           color: #9e9e9e;
         }
         .articles-post-title a {
-          color: #0073a7;
+          color: #000;
           text-decoration: none;
         }
         .articles-posts > .articles-post:last-child {
