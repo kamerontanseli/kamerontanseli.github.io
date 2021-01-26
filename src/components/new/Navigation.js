@@ -21,6 +21,13 @@ export default function Navigation() {
               </Link>
             </div>
             <div>
+              <Link href="/blog">
+                <a href="/blog" className="navigation-link">
+                  Blog
+                </a>
+              </Link>
+            </div>
+            <div>
               <Link href="/projects">
                 <a href="/projects" className="navigation-link">
                   Apps
