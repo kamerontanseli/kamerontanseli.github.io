@@ -25,10 +25,7 @@ const Bio = () => (
           150% and created over 640,000 dynamic landing pages to drive SEO.
         </p>
         <p>
-          In my down time I like to make{" "}
-          <a href="/projects">
-            micro-saas
-          </a>{" "}
+          In my down time I like to make <a href="/projects">micro-saas</a>{" "}
           startups. So far I've launched:{" "}
           <a target="_blank" href="https://readercatch.com">
             Readercatch
@@ -59,7 +56,7 @@ const Bio = () => (
           date include:{" "}
           <a
             target="_blank"
-            href="https://news.ycombinator.com/item?id=23126455"
+            href="https://kamrn.com/blog/first-it-was-craiglist-next-its-zapier"
           >
             {" "}
             First, it was Craigslist, next it's Zapier (#1 HN 30K+ views)
