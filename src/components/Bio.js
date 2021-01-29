@@ -69,7 +69,7 @@ const Bio = () => (
         </p>
         <p>
           You can find me on{" "}
-          <a target="_blank" href="instagram.com/kameron_tanseli/">
+          <a target="_blank" href="https://instagram.com/kameron_tanseli/">
             Instagram
           </a>
           , and{" "}
