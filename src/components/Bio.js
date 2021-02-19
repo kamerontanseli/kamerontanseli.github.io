@@ -19,7 +19,7 @@ const Bio = () => (
             growing rapidly
           </a>
           . I was previously at:{" "}
-          <a target="_blank" href="http://publicdash.com">
+          <a target="_blank" href="http://tray.io">
             Tray.io ($600m+)
           </a>
           ,{" "}
