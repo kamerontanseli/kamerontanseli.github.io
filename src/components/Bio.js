@@ -3,7 +3,7 @@ const Bio = () => (
     <div className="container">
       <img
         className="bio-img"
-        width={100}
+        width={120}
         src="/static/profile.jpg"
         alt="Kameron Tanseli"
       />
@@ -11,18 +11,25 @@ const Bio = () => (
         <p>Hey, I'm Kameron.</p>
         <p>
           I work as a Senior Growth Engineer at{" "}
-          <a target="_blank" href="https://tray.io">
-            Tray.io
+          <a target="_blank" href="http://qatalog.com/">
+            Qatalog
           </a>
-          , a London based automation startup that's{" "}
-          <a
-            target="_blank"
-            href="https://techcrunch.com/2019/11/26/tray-io-brings-in-50m-more-at-a-600m-valuation-for-its-workflow-automation-tools/"
-          >
+          , a London based work collaboration startup that's{" "}
+          <a target="_blank" href="https://techcrunch.com/2020/10/13/qatalog/">
             growing rapidly
           </a>
-          . Since joining, I've helped Tray increase their conversion rate by
-          150% and created over 640,000 dynamic landing pages to drive SEO.
+          . I was previously at:{" "}
+          <a target="_blank" href="http://publicdash.com">
+            Tray.io ($600m+)
+          </a>
+          ,{" "}
+          <a target="_blank" href="https://tryflux.com">
+            Flux ($14M+)
+          </a>
+          , and {" "}
+          <a target="_blank" href="http://motivii.com/">
+            Motivii (Exit)
+          </a>.
         </p>
         <p>
           In my down time I like to make <a href="/projects">micro-saas</a>{" "}
@@ -37,17 +44,6 @@ const Bio = () => (
           , and{" "}
           <a target="_blank" href="http://publicdash.com">
             Public Dash
-          </a>
-          .
-        </p>
-        <p>
-          Previously, as a JS developer, I helped create payment integrations at{" "}
-          <a target="_blank" href="https://tryflux.com">
-            Flux ($9M+)
-          </a>
-          , and lead product development at{" "}
-          <a target="_blank" href="http://motivii.com/">
-            Motivii (Acquired)
           </a>
           .
         </p>
