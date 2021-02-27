@@ -18,6 +18,17 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
+              <a target="_blank" href="https://sunset-app.netlify.app/">
+                Sunset
+              </a>
+            </h3>
+            <p>
+              Sunset is a beautiful minimal writing app that I made whilst at my last few days at Tray.io.
+            </p>
+            <p>It puts a focus on words rather than UI and prefers a few simple hotkeys over buttons.</p>
+          </div>
+          <div className="projects-project">
+            <h3>
               <a target="_blank" href="https://leananalyticscanvas.com">
                 Lean Analytics Canvas
               </a>
