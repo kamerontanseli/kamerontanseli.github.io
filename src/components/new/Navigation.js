@@ -30,18 +30,9 @@ export default function Navigation() {
             <div>
               <Link href="/projects">
                 <a href="/projects" className="navigation-link">
-                  Apps
+                  Projects
                 </a>
               </Link>
-            </div>
-            <div>
-              <a
-                target="_blank"
-                href="https://kameront.substack.com/"
-                className="navigation-link"
-              >
-                Newsletter
-              </a>
             </div>
           </div>
         </div>

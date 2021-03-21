@@ -55,10 +55,9 @@ export default function Meta({ title, description, image }) {
           content={`https://kamrn.com${image || "/static/meta.png"}`}
         />
         <meta property="og:description" content={description} />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-72466279-4"
-        ></script>
+        {process.env.NODE_ENV !== "development" && (
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
+        )}
       </Head>
       <style jsx global>
         {`
