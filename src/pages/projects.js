@@ -7,7 +7,7 @@ const Projects = () => (
     <Meta
       title={`Kameron Tanseli | Projects`}
       description={`
-      Kameron Tanseli's Growth Engineering Blog. Kameron is a Senior Growth Engineer at Tray.io ($600m+), 
+      Kameron Tanseli's Blog. Kameron is a Senior Growth Engineer at Qatalog ($18m+), 
       investor (getchip.uk, getcoconut.com), and IndieHacker (293 upvotes and counting).
       `.trim()}
     />
@@ -18,14 +18,30 @@ const Projects = () => (
         <div className="projects">
           <div className="projects-project">
             <h3>
+              <a target="_blank" href="https://onmycooklist.com/">
+                OnMyCookList
+              </a>
+            </h3>
+            <p>
+              Instantly import a recipe from any website, track it's progress,
+              and rate it's difficulty and taste. All from one easy to manage
+              board.
+            </p>
+          </div>
+          <div className="projects-project">
+            <h3>
               <a target="_blank" href="https://sunset-app.netlify.app/">
                 Sunset
               </a>
             </h3>
             <p>
-              Sunset is a beautiful minimal writing app that I made whilst at my last few days at Tray.io.
+              Sunset is a beautiful minimal writing app that I made whilst at my
+              last few days at Tray.io.
             </p>
-            <p>It puts a focus on words rather than UI and prefers a few simple hotkeys over buttons.</p>
+            <p>
+              It puts a focus on words rather than UI and prefers a few simple
+              hotkeys over buttons.
+            </p>
           </div>
           <div className="projects-project">
             <h3>
@@ -34,7 +50,7 @@ const Projects = () => (
               </a>
             </h3>
             <p>
-              Lean Analytics by Avinash Kaushik aims to help you create a
+              Lean Analytics by Alistair Croll aims to help you create a
               sustainable way to pick metrics that matter by tying them to
               fundamental business problems, creating hypotheses you can test
               and driving change in the business from the learnings you

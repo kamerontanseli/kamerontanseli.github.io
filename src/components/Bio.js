@@ -26,22 +26,21 @@ const Bio = () => (
           <a target="_blank" href="https://tryflux.com">
             Flux ($14M+)
           </a>
-          , and {" "}
+          , and{" "}
           <a target="_blank" href="http://motivii.com/">
             Motivii (Exit)
-          </a>.
+          </a>
+          .
         </p>
         <p>
           In my down time I like to make <a href="/projects">micro-saas</a>{" "}
           startups. So far I've launched:{" "}
           <a target="_blank" href="https://readercatch.com">
             Readercatch
-          </a>
-          ,{" "}
-          <a target="_blank" href="https://leananalyticscanvas.com/">
-            Lean Analytics Canvas
-          </a>
-          , and{" "}
+          </a>, {" "}
+          <a target="_blank" href="https://onmycooklist.com">
+            OnMyCookList
+          </a>, and{" "}
           <a target="_blank" href="http://publicdash.com">
             Public Dash
           </a>

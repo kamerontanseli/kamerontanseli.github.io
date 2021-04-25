@@ -9,7 +9,7 @@ const Metrics = ({}) => {
       <Meta
         title={`Kameron Tanseli | Open Metrics`}
         description={`
-        Kameron Tanseli's Growth Engineering Blog. Kameron is a Senior Growth Engineer at Tray.io ($600m+), 
+        Kameron Tanseli's Blog. Kameron is a Senior Growth Engineer at Qatalog ($18m+), 
         investor (getchip.uk, getcoconut.com), and IndieHacker (293 upvotes and counting).
         `.trim()}
       />
