@@ -12,9 +12,9 @@ const Bio = () => (
         <p>
           I work as a Senior Growth Engineer at{" "}
           <a target="_blank" href="http://qatalog.com/">
-            Qatalog
+            Qatalog ($18m+)
           </a>
-          , a London based work collaboration startup that's{" "}
+          , a London based work hub startup that's{" "}
           <a target="_blank" href="https://techcrunch.com/2020/10/13/qatalog/">
             growing rapidly
           </a>
@@ -34,17 +34,7 @@ const Bio = () => (
         </p>
         <p>
           In my down time I like to make <a href="/projects">micro-saas</a>{" "}
-          startups. So far I've launched:{" "}
-          <a target="_blank" href="https://readercatch.com">
-            Readercatch
-          </a>, {" "}
-          <a target="_blank" href="https://onmycooklist.com">
-            OnMyCookList
-          </a>, and{" "}
-          <a target="_blank" href="http://publicdash.com">
-            Public Dash
-          </a>
-          .
+          startups.
         </p>
         <p>
           I also <a href="/blog">write sometimes</a>. Some of my top articles to
