@@ -1,16 +1,11 @@
-import Meta from "../components/new/Meta";
 import Bio from "../components/Bio";
 import Navigation from "../components/new/Navigation";
+import SEO from "../components/new/Seo";
 
 const Index = () => {
   return (
     <>
-      <Meta
-        title={`Kameron Tanseli | Growth Engineer`}
-        description={`
-        Kameron Tanseli's Blog. Kameron is a Senior Growth Engineer at Qatalog ($18m+).
-        `.trim()}
-      />
+      <SEO title={`Kameron Tanseli | Growth Engineer`} />
       <Navigation />
       <Bio />
     </>

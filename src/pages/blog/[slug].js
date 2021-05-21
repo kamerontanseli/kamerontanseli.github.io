@@ -1,13 +1,13 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-import Meta from "../../components/new/Meta";
 import Navigation from "../../components/new/Navigation";
 import Footer from "../../components/Footer";
+import SEO from "../../components/new/Seo";
 
 const BlogDetail = ({ post }) => {
   return (
     <>
-      <Meta
+      <SEO
         title={`${post.data.title}`}
         description={post.data.byline}
         image={post.data.hero_image}
@@ -78,12 +78,33 @@ const BlogDetail = ({ post }) => {
 
 export default BlogDetail;
 
-BlogDetail.getInitialProps = async function(ctx) {
-  const content = await import(`../../posts/${ctx.query.slug}.md`);
-  const post = matter(content.default);
+export async function getStaticProps({ params }) {
+  const file = await import(`../../posts/${params.slug}.md`);
+  const { data, content } = matter(file.default);
 
   return {
-    post,
-    slug: ctx.query.slug,
+    props: {
+      post: { data, content },
+      slug: params.slug,
+    },
   };
-};
+}
+
+export async function getStaticPaths() {
+  const glob = require("glob");
+
+  const blogs = glob.sync("src/posts/**/*.md");
+
+  const blogSlugs = blogs.map((file) =>
+    file
+      .split("/")[2]
+      .replace(/ /g, "-")
+      .slice(0, -3)
+      .trim()
+  );
+
+  return {
+    paths: blogSlugs.map((slug) => ({ params: { slug } })),
+    fallback: false,
+  };
+}

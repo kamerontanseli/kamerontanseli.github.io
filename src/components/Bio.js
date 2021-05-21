@@ -33,8 +33,8 @@ const Bio = () => (
           .
         </p>
         <p>
-          In my down time I like to make <a href="/projects">micro-saas</a>{" "}
-          startups.
+          In my down time I like to make <a href="/projects">small online tools</a>{" "}
+          to help people.
         </p>
         <p>
           I also <a href="/blog">write sometimes</a>. Some of my top articles to

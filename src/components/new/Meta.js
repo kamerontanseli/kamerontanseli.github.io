@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useEffect } from "react";
+import SEO from "./Seo";
 
 export default function Meta({ title, description, image }) {
   useEffect(() => {
@@ -15,8 +16,6 @@ export default function Meta({ title, description, image }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <title>{title}</title>
-        <meta name="description" content={description}></meta>
 
         <link
           rel="apple-touch-icon"
@@ -39,63 +38,24 @@ export default function Meta({ title, description, image }) {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@KameronTanseli" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
         <meta name="twitter:creator" content="@KameronTanseli" />
-        <meta
-          name="twitter:image"
-          content={`https://kamrn.com${image || "/static/meta.png"}`}
-        ></meta>
 
-        <meta property="og:title" content={title} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://kamrn.com" />
-        <meta
-          property="og:image"
-          content={`https://kamrn.com${image || "/static/meta.png"}`}
-        />
-        <meta property="og:description" content={description} />
-        {process.env.NODE_ENV !== "development" && (
-          <script async src="https://cdn.splitbee.io/sb.js"></script>
-        )}
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-72466279-4"
+        ></script>
       </Head>
-      <style jsx global>
-        {`
-          * {
-            box-sizing: border-box;
-          }
-
-          html {
-            font-size: 100%;
-          } /*16px*/
-
-          body {
-            background-color: #fff;
-            font-weight: 400;
-            font-family: Helvetica;
-            line-height: 1.75;
-            color: #000;
-            margin: 0;
-            padding: 0;
-          }
-
-          .container {
-            max-width: 800px;
-            margin: 0 auto;
-          }
-
-          @media screen and (max-width: 800px) {
-            .container {
-              margin: 0 1em;
-            }
-          }
-        `}
-      </style>
+      <SEO title={title} description={description} image={image} />
     </>
   );
 }
 
 Meta.defaultProps = {
-  title: "kamrn",
-  description: "The thoughts of Kameron Tanseli",
+  title: "Kameron Tanseli | Growth Engineer",
+  description:
+    "Kameron Tanseli's Blog. Kameron is a Senior Growth Engineer at Qatalog ($18m+).",
+  image: "/static/meta.png",
 };

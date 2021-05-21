@@ -1,19 +1,13 @@
 import matter from "gray-matter";
-import Meta from "../components/new/Meta";
 import Navigation from "../components/new/Navigation";
 import Articles from "../components/Articles";
 import Footer from "../components/Footer";
+import SEO from "../components/new/Seo";
 
 const Blog = ({ posts }) => {
   return (
     <>
-      <Meta
-        title={`Kameron Tanseli | Growth Engineer`}
-        description={`
-        Kameron Tanseli's Blog. Kameron is a Senior Growth Engineer at Qatalog ($18m+), 
-        investor (getchip.uk, getcoconut.com), and IndieHacker (293 upvotes and counting).
-        `.trim()}
-      />
+      <SEO title={`Kameron Tanseli | Growth Engineer`} />
       <Navigation />
       <Articles posts={posts} />
       <Footer />

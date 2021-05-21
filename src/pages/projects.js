@@ -1,16 +1,10 @@
 import Footer from "../components/Footer";
-import Meta from "../components/new/Meta";
 import Navigation from "../components/new/Navigation";
+import SEO from "../components/new/Seo";
 
 const Projects = () => (
   <>
-    <Meta
-      title={`Kameron Tanseli | Projects`}
-      description={`
-      Kameron Tanseli's Blog. Kameron is a Senior Growth Engineer at Qatalog ($18m+), 
-      investor (getchip.uk, getcoconut.com), and IndieHacker (293 upvotes and counting).
-      `.trim()}
-    />
+    <SEO title={`Kameron Tanseli | Projects`} />
     <Navigation />
     <div className="container">
       <div className="content">
