@@ -13,7 +13,6 @@ module.exports = ({
       "/": { page: "/" },
       "/blog": { page: "/blog" },
       "/projects": { page: "/projects" },
-      "/metrics": { page: "/metrics" },
     };
     //get all .md files in the posts dir
     const blogs = glob.sync('src/posts/**/*.md')

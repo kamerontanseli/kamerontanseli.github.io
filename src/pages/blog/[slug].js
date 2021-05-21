@@ -31,7 +31,7 @@ const BlogDetail = ({ post }) => {
       <Footer />
       <style jsx>{`
         .content {
-          padding: 2em;
+          padding: 2em 0;
         }
         .content-header {
           height: 300px;

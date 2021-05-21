@@ -13,9 +13,6 @@ const Articles = ({ posts }) => (
   <div className="container">
     <div className="articles">
       <style jsx>{`
-        .articles {
-          padding: 2em;
-        }
         .articles-title {
           margin-top: 0;
           margin-bottom: 0.5em;

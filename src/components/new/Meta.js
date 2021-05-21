@@ -83,6 +83,12 @@ export default function Meta({ title, description, image }) {
             max-width: 800px;
             margin: 0 auto;
           }
+
+          @media screen and (max-width: 800px) {
+            .container {
+              margin: 0 1em;
+            }
+          }
         `}
       </style>
     </>

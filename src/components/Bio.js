@@ -67,7 +67,7 @@ const Bio = () => (
     </div>
     <style jsx>{`
       .bio {
-        padding: 2em;
+        padding: 2em 0;
       }
       .bio-img {
         display: block;

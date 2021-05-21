@@ -43,7 +43,7 @@ export default function Navigation() {
         }
 
         .navigation {
-          padding: 1em 2em;
+          padding: 1em 0;
           display: grid;
           grid-template-columns: 1fr auto;
           align-items: center;
@@ -77,8 +77,9 @@ export default function Navigation() {
             grid-gap: 10px;
           }
           .navigation-menu {
-            display: grid;
-            grid-template-columns: repeat(4, auto);
+            display: inline-grid;
+            grid-template-columns: min-content min-content min-content;
+            grid-gap: 20px;
           }
           .navigation-menu > div {
             text-align: left;

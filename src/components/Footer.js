@@ -7,7 +7,7 @@ const Footer = () => (
         grid-gap: 10px;
         list-style: none;
         margin: 0;
-        padding: 1em;
+        padding: 1em 0;
       }
       li {
         font-size: 0.8em;

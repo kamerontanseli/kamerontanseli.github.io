@@ -19,7 +19,7 @@ const Projects = () => (
           <div className="projects-project">
             <h3>
               <a target="_blank" href="https://onmycooklist.com/">
-                OnMyCookList
+                onmycooklist.com
               </a>
             </h3>
             <p>
@@ -30,23 +30,8 @@ const Projects = () => (
           </div>
           <div className="projects-project">
             <h3>
-              <a target="_blank" href="https://sunset-app.netlify.app/">
-                Sunset
-              </a>
-            </h3>
-            <p>
-              Sunset is a beautiful minimal writing app that I made whilst at my
-              last few days at Tray.io.
-            </p>
-            <p>
-              It puts a focus on words rather than UI and prefers a few simple
-              hotkeys over buttons.
-            </p>
-          </div>
-          <div className="projects-project">
-            <h3>
               <a target="_blank" href="https://leananalyticscanvas.com">
-                Lean Analytics Canvas
+                leananalyticscanvas.com
               </a>
             </h3>
             <p>
@@ -55,67 +40,6 @@ const Projects = () => (
               fundamental business problems, creating hypotheses you can test
               and driving change in the business from the learnings you
               identify.
-            </p>
-          </div>
-          <div className="projects-project">
-            <h3>
-              <a target="_blank" href="https://ikigai-tool.netlify.app/">
-                Ikigai Online Tool
-              </a>
-            </h3>
-            <p>
-              Ikigai is the Japanese concept that means "a reason for being."
-              The word refers to having a meaningful direction or purpose in
-              life. I created an online tool to help me reflect and answer this
-              very question.
-            </p>
-          </div>
-          <div className="projects-project">
-            <h3>
-              <a target="_blank" href="https://readercatch.com">
-                Readercatch.com
-              </a>
-            </h3>
-            <p>
-              Convert visitors into customers with high-converting email banner
-              pop-ups.
-            </p>
-            <p>
-              Part of the 12 startups challenge.{" "}
-              <a href="/blog/readercatch">See progress here</a>.
-            </p>
-          </div>
-          <div className="projects-project">
-            <h3>
-              <a target="_blank" href="https://publicdash.com">
-                PublicDash.com
-              </a>
-            </h3>
-            <p>
-              Public Embeddable Dashboards to increase public accountability to
-              reaching key metrics.
-            </p>
-            <p>
-              I built the MVP in 1 evening using Node, Mongo, and Edge
-              Templates. You can check it out on{" "}
-              <a href="/metrics">my open metrics page</a>.
-            </p>
-          </div>
-          <div className="projects-project">
-            <h3>
-              <a target="_blank" href="/projects/dreamline">
-                4HWW Dreamline Tool
-              </a>
-            </h3>
-            <p>
-              The 4 Hour Work Week is one of my all time favourite books. Having
-              gone from working 9-5s to 4 hour days myself it's been a huge
-              inspiration to me for years.
-            </p>
-            <p>
-              I commonly use the dreamline worksheet in the book to map out my
-              goals in life every quarter. I realised I could just make it into
-              an offline-first web app 🙃.
             </p>
           </div>
           <div className="projects-project">
@@ -144,7 +68,7 @@ const Projects = () => (
 
     <style jsx>{`
       .content {
-        padding: 2em;
+        padding: 2em 0;
       }
       .content-title {
         margin-top: 0;
