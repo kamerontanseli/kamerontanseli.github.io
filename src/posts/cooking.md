@@ -29,14 +29,21 @@ Those cookbooks do more harm than good for novice cooks as they appear scary, or
 
 When looking at a recipe, I ask myself:
 
-* Are the ingredients listed available to me via my local grocers?
-	* No point missing out a key spice or ingredient due to it not being easy to find.
-* Are the ingredients in-season (i.e: going to be fresh)?
-	* This goes back to the golden rule - if it’s in season and locally produced then you’re going to get the best flavour out of it.
-* Is the number of on-plate ingredients less than 5-6?
-	* The more ingredients you have to plate, the harder it’ll be to make it look prettier.
-* Can you make a portion of the dish ahead of time?
-	* I once made a bean puree ahead of time, so come time to cook I just had to worry about the steak and potatoes.
+_Are the ingredients listed available to me via my local grocers?_
+
+No point missing out a key spice or ingredient due to it not being easy to find.
+
+_Are the ingredients in-season (i.e: going to be fresh)?_
+
+This goes back to the golden rule - if it’s in season and locally produced then you’re going to get the best flavour out of it.
+
+_Is the number of on-plate ingredients less than 5-6?_
+
+The more ingredients you have to plate, the harder it’ll be to make it look prettier.
+
+_Can you make a portion of the dish ahead of time?_
+
+I once made a bean puree ahead of time, so come time to cook I just had to worry about the steak and potatoes.
 
 ## Plating A Dish
 The most common question I get is how to make a dish look pretty on the plate. Considering that we first eat with our eyes, this step is probably the most important.
@@ -53,11 +60,18 @@ There are actually a number of different plating techniques ranging from landsca
 ## Necessary Equipment
 There’s a few tools I find myself using daily when cooking food:
 
-* Stainless steel or copper saucepan
-	* Get yourself a saucepan that can go in and out of the oven, it’ll save you a tonne of washing up, and allows you too have all the flavours in one place.
-* Microplane grater
-	* For adding parmesan or zesting any fruit into/onto a dish
-* Chef’s Knife
-	* The omnitool of the kitchen, the chef’s knife is your best friend. Spend more than £50 getting one and get used to it’s handle.
-* Food Processor
-	* Useful for making pastries, cheesecakes, and purees. I can’t live without mine.
+**Stainless steel or copper saucepan**
+
+Get yourself a saucepan that can go in and out of the oven, it’ll save you a tonne of washing up, and allows you too have all the flavours in one place.
+
+**Microplane grater**
+
+For adding parmesan or zesting any fruit into/onto a dish
+
+**Chef’s Knife**
+
+The omnitool of the kitchen, the chef’s knife is your best friend. Spend more than £50 getting one and get used to it’s handle.
+
+**Food Processor**
+
+Useful for making pastries, cheesecakes, and purees. I can’t live without mine.
