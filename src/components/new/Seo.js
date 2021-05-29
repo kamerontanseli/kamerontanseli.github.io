@@ -15,8 +15,18 @@ export default function SEO({ title, description, image }) {
       <meta property="og:title" content={title} />
       {image && (
         <>
-          <meta name="twitter:image" content={`https://kamrn.com${image}`} />
-          <meta property="og:image" content={`https://kamrn.com${image}`} />
+          <meta
+            name="twitter:image"
+            content={
+              image.startsWith("/") ? `https://kamrn.com${image}` : image
+            }
+          />
+          <meta
+            property="og:image"
+            content={
+              image.startsWith("/") ? `https://kamrn.com${image}` : image
+            }
+          />
         </>
       )}
     </Head>
