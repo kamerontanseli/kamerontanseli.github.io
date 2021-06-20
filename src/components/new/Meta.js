@@ -47,6 +47,11 @@ export default function Meta({ title, description, image }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-72466279-4"
         ></script>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </Head>
       <SEO title={title} description={description} image={image} />
     </>

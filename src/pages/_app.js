@@ -1,4 +1,5 @@
 import Meta from "../components/new/Meta";
+import TwitterFollow from "../components/TwitterFollow";
 
 function App({ Component, pageProps }) {
   return (
@@ -36,6 +37,7 @@ function App({ Component, pageProps }) {
           }
         `}
       </style>
+      <TwitterFollow />
       <Component {...pageProps} />
     </>
   );
