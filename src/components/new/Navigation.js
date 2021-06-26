@@ -21,6 +21,13 @@ export default function Navigation() {
               </Link>
             </div>
             <div>
+              <Link href="/growth">
+                <a href="/growth" className="navigation-link">
+                  Growth
+                </a>
+              </Link>
+            </div>
+            <div>
               <Link href="/blog">
                 <a href="/blog" className="navigation-link">
                   Blog
@@ -78,7 +85,7 @@ export default function Navigation() {
           }
           .navigation-menu {
             display: inline-grid;
-            grid-template-columns: min-content min-content min-content;
+            grid-template-columns: min-content min-content min-content min-content;
             grid-gap: 20px;
           }
           .navigation-menu > div {
