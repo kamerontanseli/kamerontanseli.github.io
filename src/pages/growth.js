@@ -109,14 +109,6 @@ const Growth = () => {
             </a>
           </li>
           <li>
-            <a
-              href="https://hbr.org/2021/04/to-make-lean-startups-work-you-need-a-balanced-team"
-              target="_blank"
-            >
-              To Make Lean Startups Work, You Need a Balanced Team
-            </a>
-          </li>
-          <li>
             <a href="https://leanstartup.co/what-is-an-mvp/" target="_blank">
               What is an MVP?
             </a>
