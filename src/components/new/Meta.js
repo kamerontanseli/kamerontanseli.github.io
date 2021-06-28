@@ -16,25 +16,13 @@ export default function Meta({ title, description, image }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-
+        <link rel="icon" href="/static/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/static/favicon_ico/apple-touch-icon.png"
+          href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet"
         />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/static/favicon_ico/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/static/favicon_ico/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/static/favicon_ico/site.webmanifest" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@KameronTanseli" />
@@ -47,11 +35,6 @@ export default function Meta({ title, description, image }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-72466279-4"
         ></script>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charSet="utf-8"
-        ></script>
       </Head>
       <SEO title={title} description={description} image={image} />
     </>
@@ -60,7 +43,6 @@ export default function Meta({ title, description, image }) {
 
 Meta.defaultProps = {
   title: "Kameron Tanseli | Growth Engineer",
-  description:
-    "Kameron Tanseli's Blog. Kameron is a Senior Growth Engineer at Qatalog ($18m+).",
+  description: "Kameron Tanseli's Blog.",
   image: "/static/meta.png",
 };
