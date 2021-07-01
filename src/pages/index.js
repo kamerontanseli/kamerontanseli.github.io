@@ -54,7 +54,13 @@ const Index = ({ posts }) => {
           <p>Hey, I'm Kameron Tanseli.</p>
 
           <p>
-            I'm the Senior Growth Engineer at <strong>Qatalog.com</strong>.
+            I'm the Senior Growth Engineer at{" "}
+            <strong>
+              <a target="_blank" href="https://qatalog.com/">
+                Qatalog.com
+              </a>
+            </strong>
+            .
           </p>
 
           <p>

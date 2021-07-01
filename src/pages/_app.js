@@ -14,6 +14,27 @@ function App({ Component, pageProps }) {
             font-size: 16px;
           }
 
+          @media screen and (max-width: 480px) {
+            html {
+              font-size: 14px;
+            }
+          }
+
+          blockquote {
+            margin: 0;
+            margin-left: 1.25em;
+            font-style: italic;
+            color: #4c4a4a;
+          }
+          footer {
+            text-align: center;
+            font-size: 0.8em;
+          }
+
+          blockquote a {
+            color: #4c4a4a;
+          }
+
           body {
             margin: 0;
             padding: 0;
@@ -81,6 +102,9 @@ function App({ Component, pageProps }) {
       <div className="container">
         <Component {...pageProps} />
       </div>
+      <footer>
+        <p>&copy; kamrn.com {new Date().getFullYear()}</p>
+      </footer>
     </>
   );
 }
