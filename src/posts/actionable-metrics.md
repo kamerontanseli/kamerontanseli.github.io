@@ -2,7 +2,7 @@
 author: Kameron Tanseli
 date: '2021-07-02T10:45:19Z'
 title: 'Actionable Metrics'
-byline: ""
+byline: "No matter if you're a tech SaaS company or a bakery. You should have metrics at hand which displays the performance of your business..."
 ---
 
 > An actionable metric is one that ties specific and repeatable actions to observed results. - [LeanStack](https://blog.leanstack.com/3-rules-to-actionable-metrics-in-a-lean-startup/#:~:text=An%20actionable%20metric%20is%20one,or%20what%20to%20do%20next.)
