@@ -21,7 +21,7 @@ _An Instagram Page relies on followers clicking their bio link to buy their merc
 
 <textarea></textarea>
 
-**3. Now set a cadence for it (i.e: daily/weekly/biweekly/monthly)?**
+**2. Now set a cadence for it (i.e: daily/weekly/biweekly/monthly)?**
 
 _If your business has customers that only visit you once a month then set a monthly cadence._
 
