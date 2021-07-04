@@ -1,14 +1,17 @@
 import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote";
 import SEO from "../../components/new/Seo";
 
 const Article = ({ post }) => {
   return (
     <>
       <SEO title={`${post.data.title}`} description={post.data.byline} />
-      <p><a href="/">&larr; Back to all articles</a></p>
+      <p>
+        <a href="/">&larr; Back to all articles</a>
+      </p>
       <h1>{post.data.title}</h1>
-      <ReactMarkdown source={post.content} />
+      <MDXRemote {...post.content} components={{}} />
     </>
   );
 };
@@ -18,10 +21,11 @@ export default Article;
 export async function getStaticProps({ params }) {
   const file = await import(`../../posts/${params.slug}.md`);
   const { data, content } = matter(file.default);
+  const source = await serialize(content);
 
   return {
     props: {
-      post: { data, content },
+      post: { data, content: source },
       slug: params.slug,
     },
   };

@@ -97,6 +97,16 @@ function App({ Component, pageProps }) {
             margin: 0 auto;
             padding: 4em 2em;
           }
+
+          textarea {
+            width: 100%;
+            min-height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            padding: 1em;
+            font-family: "Lora", serif;
+          }
         `}
       </style>
       <div className="container">
