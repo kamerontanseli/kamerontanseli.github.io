@@ -2,7 +2,7 @@
 author: Kameron Tanseli
 date: "2021-07-01T20:01:02.600Z"
 title: "Experiments are for learning."
-byline: "How trying to prove growth's abilities ended up stunting our impact on the bottom line and how we fixed it."
+byline: "How hacking top of the funnel metrics lead us to realize we weren't learning enough and how we fixed it."
 ---
 
 > "In order to seek impact, you need to start with prioritized areas of opportunities, not just ideas or even prioritized ideas. Problems can be noisy, but they don’t necessarily correlate with being the biggest growth opportunity." - [Brian Balfour](https://brianbalfour.com/essays/growth-insights)
