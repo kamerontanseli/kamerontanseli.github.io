@@ -1,10 +1,10 @@
 import matter from "gray-matter";
-import SEO from "../components/new/Seo";
+import SEO from "../../components/new/Seo";
 
-const Index = ({ posts }) => {
+const Category = ({ category, posts }) => {
   return (
     <div>
-      <SEO title="Kameron Tanseli | Home" />
+      <SEO title={`Kameron Tanseli | ${category}`} />
       <style jsx>{`
         .columns {
           display: grid;
@@ -67,54 +67,7 @@ const Index = ({ posts }) => {
       <div className="columns">
         <img width={150} src="/static/profile.jpeg" alt="Kameron Tanseli" />
         <div className="content">
-          <p>Hey, I'm Kameron Tanseli.</p>
-
-          <p>
-            I'm the Senior Growth Engineer at{" "}
-            <strong>
-              <a target="_blank" href="https://qatalog.com/">
-                Qatalog.com
-              </a>
-            </strong>
-            .
-          </p>
-
-          <p>
-            I help businesses learn about their customers and grow rapidly
-            through the use of growth experiments and data analysis.
-          </p>
-
-          <p>
-            Sign up to my{" "}
-            <a
-              target="_blank"
-              href="https://www.getrevue.co/profile/kamerontanseli"
-            >
-              Newsletter
-            </a>{" "}
-            to get notified when I write a new article.
-          </p>
-
-          <p>
-            Follow me on:{" "}
-            <a target="_blank" href="https://twitter.com/KameronTanseli">
-              Twitter
-            </a>
-            ,{" "}
-            <a
-              target="_blank"
-              href="https://www.instagram.com/kameron_tanseli/"
-            >
-              Instagram
-            </a>
-            , or{" "}
-            <a
-              target="_blank"
-              href="https://www.producthunt.com/@kameron_tanseli"
-            >
-              ProductHunt
-            </a>
-          </p>
+          <h1 style={{ textTransform: "capitalize" }}>{category}</h1>
         </div>
       </div>
       <div className="articles">
@@ -142,7 +95,8 @@ const Index = ({ posts }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
+  const category = params.slug;
   //get posts & context from folder
   const posts = ((context) => {
     const keys = context.keys();
@@ -163,15 +117,55 @@ export async function getStaticProps() {
       };
     });
     return data;
-  })(require.context("../posts", true, /\.md$/)).sort(
-    (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
-  );
+  })(require.context("../../posts", true, /\.md$/))
+    .sort(
+      (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
+    )
+    .filter((p) => {
+      return p.document.data.category === category;
+    });
 
   return {
     props: {
+      category,
       posts: JSON.parse(JSON.stringify(posts)),
     },
   };
 }
 
-export default Index;
+export async function getStaticPaths() {
+  //get posts & context from folder
+  const posts = ((context) => {
+    const keys = context.keys();
+    const values = keys.map(context);
+    const data = keys.map((key, index) => {
+      // Create slug from filename
+      const slug = key
+        .replace(/^.*[\\\/]/, "")
+        .split(".")
+        .slice(0, -1)
+        .join(".");
+      const value = values[index];
+      // Parse yaml metadata & markdownbody in document
+      const document = matter(value.default);
+      return {
+        document,
+        slug,
+      };
+    });
+    return data;
+  })(require.context("../../posts", true, /\.md$/))
+    .sort(
+      (a, b) => new Date(b.document.data.date) - new Date(a.document.data.date)
+    )
+    .map((p) => p.document.data.category);
+
+  return {
+    paths: posts.map((category) => ({
+      params: { slug: category },
+    })),
+    fallback: false,
+  };
+}
+
+export default Category;

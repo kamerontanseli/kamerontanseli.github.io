@@ -98,6 +98,12 @@ function App({ Component, pageProps }) {
             padding: 4em 2em;
           }
 
+          img {
+            display: block;
+            max-width: 400px;
+            margin: 3em auto;
+          }
+
           textarea {
             width: 100%;
             min-height: 200px;

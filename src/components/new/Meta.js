@@ -36,7 +36,6 @@ export default function Meta({ title, description, image }) {
           src="https://www.googletagmanager.com/gtag/js?id=UA-72466279-4"
         ></script>
       </Head>
-      <SEO title={title} description={description} image={image} />
     </>
   );
 }

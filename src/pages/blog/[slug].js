@@ -6,7 +6,11 @@ import SEO from "../../components/new/Seo";
 const Article = ({ post }) => {
   return (
     <>
-      <SEO title={`${post.data.title}`} description={post.data.byline} />
+      <SEO
+        title={`${post.data.title}`}
+        description={post.data.byline}
+        image={post.data.image}
+      />
       <p>
         <a href="/">&larr; Back to all articles</a>
       </p>
