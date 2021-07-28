@@ -65,7 +65,7 @@ const Index = ({ posts }) => {
         }
       `}</style>
       <div className="columns">
-        <img width={150} src="/static/profile.jpeg" alt="Kameron Tanseli" />
+        <img style={{ margin: 0 }} width={150} src="/static/profile.jpeg" alt="Kameron Tanseli" />
         <div className="content">
           <p>Hey, I'm Kameron Tanseli.</p>
 

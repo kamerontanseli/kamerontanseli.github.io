@@ -102,6 +102,7 @@ function App({ Component, pageProps }) {
             display: block;
             max-width: 400px;
             margin: 3em auto;
+            width: 100%;
           }
 
           textarea {
