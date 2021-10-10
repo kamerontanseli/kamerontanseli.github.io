@@ -101,3 +101,12 @@ R = (6 * 1185 - 137 * 51) / sqrt(
 ) = 0.88 (88%)
 
 ```
+
+88% signifies quite a high correlation between tasks created and messages sent. From here we can develop our own hypotheses for why this might be:
+
+* Do users who create new tasks then message other users to talk about the task?
+* Is there an issue with our data collection where a task will trigger a message?
+* If we reduce the number of tasks being created will that also reduce messages sent?
+* Etc etc.
+
+Remember kids: [Correlation does not mean causation](https://www.theguardian.com/science/blog/2012/jan/06/correlation-causation). Use [randomized controlled AB experiments](https://hbr.org/2017/06/a-refresher-on-ab-testing) to determine the casual relationship of the two metrics.
