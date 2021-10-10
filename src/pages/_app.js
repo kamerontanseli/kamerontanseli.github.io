@@ -98,6 +98,27 @@ function App({ Component, pageProps }) {
             padding: 4em 2em;
           }
 
+          .article-content table {
+            width: 100%;
+            text-align: left;
+            font-family: monospace;
+            border-collapse: collapse;
+          }
+
+          .article-content th {
+            background-color: #eee;
+          }
+
+          pre {
+            overflow: auto;
+          }
+
+          .article-content td,
+          .article-content th {
+            border: 1px solid #ddd;
+            padding: 5px;
+          }
+
           img {
             display: block;
             max-width: 400px;
@@ -113,6 +134,33 @@ function App({ Component, pageProps }) {
             font-size: 1em;
             padding: 1em;
             font-family: "Lora", serif;
+          }
+
+          @media screen and (max-width: 480px) {
+            .article-content table,
+            .article-content pre {
+              font-size: 0.6em;
+            }
+            h1 {
+              margin-top: 0;
+              font-size: 2.052rem;
+            }
+
+            h2 {
+              font-size: 1.441rem;
+            }
+
+            h3 {
+              font-size: 0.953rem;
+            }
+
+            h4 {
+              font-size: 0.563rem;
+            }
+
+            h5 {
+              font-size: 0.25rem;
+            }
           }
         `}
       </style>

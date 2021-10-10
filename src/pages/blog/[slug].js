@@ -15,7 +15,9 @@ const Article = ({ post }) => {
         <a href="/">&larr; Back to all articles</a>
       </p>
       <h1>{post.data.title}</h1>
-      <MDXRemote {...post.content} components={{}} />
+      <div className="article-content">
+        <MDXRemote {...post.content} components={{}} />
+      </div>
     </>
   );
 };
