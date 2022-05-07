@@ -1,4 +1,5 @@
 import Meta from "../components/new/Meta";
+import Link from 'next/link';
 
 function App({ Component, pageProps }) {
   return (
@@ -95,7 +96,7 @@ function App({ Component, pageProps }) {
           .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 4em 2em;
+            padding-top: 2em;
           }
 
           .article-content table {
@@ -136,34 +137,71 @@ function App({ Component, pageProps }) {
             font-family: "Lora", serif;
           }
 
-          @media screen and (max-width: 480px) {
+          .nav {
+            padding: 16px 0;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+          }
+
+          .nav-brand {
+            flex-grow: 1;
+          }
+
+          .nav-brand a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.3em;
+          }
+
+          .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+          }
+
+          @media screen and (max-width: 800px) {
+            .nav {
+              padding: 16px 2em;
+            }
+            .container {
+              padding: 2em;
+            }
             .article-content table,
             .article-content pre {
               font-size: 0.6em;
             }
             h1 {
               margin-top: 0;
-              font-size: 2.052rem;
+              font-size: 2em;
             }
 
             h2 {
-              font-size: 1.441rem;
+              font-size: 1.4em;
             }
 
             h3 {
-              font-size: 0.953rem;
-            }
-
-            h4 {
-              font-size: 0.563rem;
-            }
-
-            h5 {
-              font-size: 0.25rem;
+              font-size: 1.2em;
             }
           }
         `}
       </style>
+      <div className="nav">
+        <div className="nav-brand">
+          <Link href="/">
+            <a href="/">Kamrn</a>
+          </Link>
+        </div>
+        <div className="nav-links">
+          <Link href="/">
+            <a href="/">Articles</a>
+          </Link>
+          <Link href="/free-tools">
+            <a href="/free-tools">Free tools</a>
+          </Link>
+        </div>
+      </div>
       <div className="container">
         <Component {...pageProps} />
       </div>

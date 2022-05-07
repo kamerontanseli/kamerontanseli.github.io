@@ -42,6 +42,11 @@ const Index = ({ posts }) => {
           color: #676767;
         }
 
+        .article-item__category {
+          display: flex;
+          justify-content: flex-end;
+        }
+
         .article-item__category > a {
           text-transform: capitalize;
           font-size: 0.65em;
@@ -70,7 +75,7 @@ const Index = ({ posts }) => {
           <p>Hey, I'm Kameron Tanseli.</p>
 
           <p>
-            I'm the Senior Growth Engineer at{" "}
+            I currently lead growth at{" "}
             <strong>
               <a target="_blank" href="https://qatalog.com/">
                 Qatalog.com
@@ -81,18 +86,7 @@ const Index = ({ posts }) => {
 
           <p>
             I help businesses learn about their customers and grow rapidly
-            through the use of growth experiments and data analysis.
-          </p>
-
-          <p>
-            Sign up to my{" "}
-            <a
-              target="_blank"
-              href="https://www.getrevue.co/profile/kamerontanseli"
-            >
-              Newsletter
-            </a>{" "}
-            to get notified when I write a new article.
+            through the use of experimentation.
           </p>
 
           <p>
