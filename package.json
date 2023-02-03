@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
-    "next": "^9.0.2",
+    "next": "^13.1.6",
     "next-mdx-remote": "^3.0.2",
     "node-glob": "^1.2.0",
     "raw-loader": "^3.0.0",
