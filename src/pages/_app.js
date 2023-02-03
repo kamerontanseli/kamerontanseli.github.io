@@ -193,14 +193,6 @@ function App({ Component, pageProps }) {
             <a href="/">Kamrn</a>
           </Link>
         </div>
-        <div className="nav-links">
-          <Link href="/">
-            <a href="/">Articles</a>
-          </Link>
-          <Link href="/free-tools">
-            <a href="/free-tools">Free tools</a>
-          </Link>
-        </div>
       </div>
       <div className="container">
         <Component {...pageProps} />

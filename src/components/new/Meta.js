@@ -41,7 +41,7 @@ export default function Meta({ title, description, image }) {
 }
 
 Meta.defaultProps = {
-  title: "Kameron Tanseli | Growth Engineer",
+  title: "Kameron Tanseli",
   description: "Kameron Tanseli's Blog.",
   image: "/static/meta.png",
 };

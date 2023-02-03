@@ -65,7 +65,7 @@ const Category = ({ category, posts }) => {
         }
       `}</style>
       <div className="columns">
-        <img width={150} src="/static/profile.jpeg" alt="Kameron Tanseli" />
+        <img width={150} src="/static/profile.png" alt="Kameron Tanseli" />
         <div className="content">
           <h1 style={{ textTransform: "capitalize" }}>{category}</h1>
         </div>

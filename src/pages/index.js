@@ -10,7 +10,7 @@ const Index = ({ posts }) => {
           display: grid;
           grid-template-columns: 1fr;
           grid-gap: 2em;
-          padding-bottom: 2em;
+          padding-bottom: 1em;
           border-bottom: 1px solid #eee;
         }
         img {
@@ -60,6 +60,10 @@ const Index = ({ posts }) => {
           background-color: #ddd;
         }
 
+        .tools {
+          border-bottom: 1px solid #eee;
+        }
+
         @media screen and (max-width: 769px) {
           .columns {
             grid-template-columns: 1fr;
@@ -70,15 +74,15 @@ const Index = ({ posts }) => {
         }
       `}</style>
       <div className="columns">
-        <img style={{ margin: 0 }} width={150} src="/static/profile.jpeg" alt="Kameron Tanseli" />
+        <img style={{ margin: 0 }} width={150} src="/static/profile.png" alt="Kameron Tanseli" />
         <div className="content">
           <p>Hey, I'm Kameron Tanseli.</p>
 
           <p>
-            I currently lead growth at{" "}
+            I'm a senior experimentation product manager at{' '}
             <strong>
-              <a target="_blank" href="https://qatalog.com/">
-                Qatalog.com
+              <a target="_blank" href="https://numan.com/">
+                Numan
               </a>
             </strong>
             .
@@ -94,14 +98,7 @@ const Index = ({ posts }) => {
             <a target="_blank" href="https://twitter.com/KameronTanseli">
               Twitter
             </a>
-            ,{" "}
-            <a
-              target="_blank"
-              href="https://www.instagram.com/kameron_tanseli/"
-            >
-              Instagram
-            </a>
-            , or{" "}
+            {" "}|{" "}
             <a
               target="_blank"
               href="https://www.producthunt.com/@kameron_tanseli"
@@ -110,6 +107,17 @@ const Index = ({ posts }) => {
             </a>
           </p>
         </div>
+      </div>
+      <div className="tools">
+        <a target="_blank" href="https://leananalyticscanvas.com"><p>leananalyticscanvas.com</p></a>
+        <p>
+          Plan out your next business idea with a free online business canvas planner.
+          All data is saved on your browser locally, and all boards can be exported to a PNG for sharing.
+        </p>
+        <a target="_blank" href="https://bayes.fyi"><p>bayes.fyi</p></a>
+        <p>
+          A bayesian AB testing calculator that uses expected loss alongside probability to determine winning variations.
+        </p>
       </div>
       <div className="articles">
         <table>
