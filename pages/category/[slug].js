@@ -1,4 +1,5 @@
 import matter from "gray-matter";
+import Image from "next/image";
 import SEO from "../../components/new/Seo";
 
 const Category = ({ category, posts }) => {
@@ -65,7 +66,7 @@ const Category = ({ category, posts }) => {
         }
       `}</style>
       <div className="columns">
-        <img width={150} src="/static/profile.png" alt="Kameron Tanseli" />
+        <Image src="/profile.png" style={{ margin: 0, borderRadius: 60, width: 60, height: 60 }} width={60} height={60} alt="Kameron Tanseli" />
         <div className="content">
           <h1 style={{ textTransform: "capitalize" }}>{category}</h1>
         </div>

@@ -7,7 +7,7 @@
   "author": "@kendallstraut",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && cp -r static out",
     "start": "next start",
     "export": "next export"
   },

@@ -39,15 +39,17 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const glob = require("glob");
-  const blogs = glob.sync("src/posts/**/*.md");
+  const blogs = glob.sync("posts/**/*.md");
 
-  const blogSlugs = blogs.map((file) =>
-    file
-      .split("/")[2]
+  const blogSlugs = blogs.map((file) =>{
+    console.log(file);
+    return file
+      .split("/")[1]
       .replace(/ /g, "-")
       .slice(0, -3)
       .trim()
-  );
+
+  });
 
   return {
     paths: blogSlugs.map((slug) => ({ params: { slug } })),

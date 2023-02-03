@@ -1,4 +1,5 @@
 import matter from "gray-matter";
+import Image from "next/image";
 import SEO from "../components/new/Seo";
 
 const Index = ({ posts }) => {
@@ -74,7 +75,7 @@ const Index = ({ posts }) => {
         }
       `}</style>
       <div className="columns">
-        <img style={{ margin: 0 }} width={150} src="/static/profile.png" alt="Kameron Tanseli" />
+        <Image style={{ margin: 0, borderRadius: 60, width: 60, height: 60 }} width={60} height={60} src="/profile.png" alt="Kameron Tanseli" />
         <div className="content">
           <p>Hey, I'm Kameron Tanseli.</p>
 
