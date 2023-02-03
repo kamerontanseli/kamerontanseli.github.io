@@ -189,9 +189,7 @@ function App({ Component, pageProps }) {
       </style>
       <div className="nav">
         <div className="nav-brand">
-          <Link href="/">
-            <a href="/">Kamrn</a>
-          </Link>
+          <Link href="/"> Kamrn </Link>
         </div>
       </div>
       <div className="container">
