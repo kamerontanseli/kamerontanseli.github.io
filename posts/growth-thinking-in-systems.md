@@ -1,9 +1,9 @@
 ---
 author: Kameron Tanseli
-date: '2023-02-02T21:59:59Z'
+date: '2024-08-24T12:09:59Z'
 title: 'Growth: Thinking in systems'
 category: 'growth'
-byline: ""
+byline: "A lot of what we rebranded as growth is just systems thinking applied to business..."
 ---
 
 > “A system is never the sum of its parts, it's the product of their interaction.” **– Russell Ackoff**
