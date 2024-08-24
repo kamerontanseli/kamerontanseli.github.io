@@ -80,7 +80,7 @@ const Index = ({ posts }) => {
           <p>Hey, I'm Kameron Tanseli.</p>
 
           <p>
-            I'm lead the growth engineering team at{' '}
+            I lead the growth engineering team at{' '}
             <strong>
               <a target="_blank" href="https://numan.com/">
                 Numan
