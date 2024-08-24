@@ -7,5 +7,8 @@ module.exports = {
     });
     return config;
   },
+  images: {
+    unoptimized: true
+  },
   distDir: 'out',
 };
