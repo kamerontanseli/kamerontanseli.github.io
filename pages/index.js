@@ -80,7 +80,7 @@ const Index = ({ posts }) => {
           <p>Hey, I'm Kameron Tanseli.</p>
 
           <p>
-            I'm a senior experimentation product manager at{' '}
+            I'm lead the growth engineering team at{' '}
             <strong>
               <a target="_blank" href="https://numan.com/">
                 Numan
@@ -91,7 +91,7 @@ const Index = ({ posts }) => {
 
           <p>
             I help businesses learn about their customers and grow rapidly
-            through the use of experimentation.
+            through the use of experimentation and growth engineering.
           </p>
 
           <p>
