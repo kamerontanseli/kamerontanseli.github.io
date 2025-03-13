@@ -77,13 +77,13 @@ const Index = ({ posts }) => {
       <div className="columns">
         <Image style={{ margin: 0, borderRadius: 60, width: 60, height: 60 }} width={60} height={60} src="/profile.png" alt="Kameron Tanseli" />
         <div className="content">
-          <p>Hey, I'm Kameron Tanseli.</p>
+          <p>Hi, I'm Kameron 👋,</p>
 
           <p>
-            I lead the growth engineering team at{' '}
+            I currently lead growth engineering at {' '}
             <strong>
-              <a target="_blank" href="https://numan.com/">
-                Numan
+              <a target="_blank" href="https://fyxer.com/">
+                Fyxer AI
               </a>
             </strong>
             .
