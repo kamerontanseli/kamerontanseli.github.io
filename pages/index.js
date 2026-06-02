@@ -82,8 +82,8 @@ const Index = ({ posts }) => {
           <p>
             I currently lead growth engineering at {' '}
             <strong>
-              <a target="_blank" href="https://fyxer.com/">
-                Fyxer AI
+              <a target="_blank" href="https://flora.ai/">
+                Flora AI
               </a>
             </strong>
             .
