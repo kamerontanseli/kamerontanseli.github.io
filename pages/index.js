@@ -86,7 +86,7 @@ const Index = ({ posts }) => {
                 Flora AI
               </a>
             </strong>
-            . I've previously founded and lead growth engineering at Fyxer, Numan, Qatalog (Now ClickUp), and Tray.ai.
+            . I've previously founded and lead growth engineering at <a target="_blank" href="https://fyxer.ai/">Fyxer</a>, <a target="_blank" href="https://www.numan.com/">Numan</a>, Qatalog (Now ClickUp), and <a target="_blank" href="https://tray.ai/">Tray.ai</a>.
           </p>
 
           <p>
