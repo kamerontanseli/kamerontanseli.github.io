@@ -119,6 +119,10 @@ const Index = ({ posts }) => {
         <p>
           A bayesian AB testing calculator that uses expected loss alongside probability to determine winning variations.
         </p>
+        <a target="_blank" href="https://trycurlup.com"><p>trycurlup.com</p></a>
+        <p>
+          A hosted dashboard for your agents to visualise anything.
+        </p>
       </div>
       <div className="articles">
         <table>
