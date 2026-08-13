@@ -65,6 +65,67 @@ const Index = ({ posts }) => {
           border-bottom: 1px solid #eee;
         }
 
+        .booking-card {
+          border: 1px solid #e5e5e5;
+          border-radius: 12px;
+          padding: 1.75em 1.5em;
+          margin: 1.5em 0;
+          background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        .booking-card h2 {
+          font-size: 1.15em;
+          margin: 0 0 0.35em;
+          letter-spacing: -0.01em;
+        }
+
+        .booking-card .booking-sub {
+          color: #676767;
+          font-size: 0.9em;
+          margin: 0 0 1em;
+        }
+
+        .booking-list {
+          list-style: none;
+          margin: 0 0 1.25em;
+          padding: 0;
+          display: grid;
+          gap: 0.45em;
+        }
+
+        .booking-list li {
+          font-size: 0.9em;
+          color: #333;
+          padding-left: 1.4em;
+          position: relative;
+        }
+
+        .booking-list li::before {
+          content: "→";
+          position: absolute;
+          left: 0;
+          color: #999;
+          font-size: 0.85em;
+        }
+
+        .booking-cta {
+          display: inline-block;
+          background: #111;
+          color: #fff;
+          font-weight: 500;
+          font-size: 0.9em;
+          padding: 0.65em 1.5em;
+          border-radius: 8px;
+          text-decoration: none;
+          transition: background 0.15s ease, transform 0.15s ease;
+        }
+
+        .booking-cta:hover {
+          background: #000;
+          transform: translateY(-1px);
+        }
+
         @media screen and (max-width: 769px) {
           .columns {
             grid-template-columns: 1fr;
@@ -94,21 +155,26 @@ const Index = ({ posts }) => {
             through the use of experimentation and growth engineering.
           </p>
 
-          <p>
-            Book a time to chat with me about:
-          </p>
-          <ul>
-            <li>Growth engineering team design</li>
-            <li>Growth engineering hiring</li>
-            <li>Finding leading metrics to drive activation</li>
-            <li>PLG &amp; Monetizing self-serve traffic</li>
-            <li>Advice on experimentation and agentic ops</li>
-          </ul>
-          <p>
-            <a target="_blank" href="https://cal.com/kameron-tanseli-bmqaam">
-              Book time with me
+          <div className="booking-card">
+            <h2>Let's talk growth</h2>
+            <p className="booking-sub">
+              Book a time to chat with me about:
+            </p>
+            <ul className="booking-list">
+              <li>Growth engineering team design</li>
+              <li>Growth engineering hiring</li>
+              <li>Finding leading metrics to drive activation</li>
+              <li>PLG &amp; Monetizing self-serve traffic</li>
+              <li>Advice on experimentation and agentic ops</li>
+            </ul>
+            <a
+              className="booking-cta"
+              target="_blank"
+              href="https://cal.com/kameron-tanseli-bmqaam"
+            >
+              Book time with me →
             </a>
-          </p>
+          </div>
         </div>
       </div>
       <div className="tools">
