@@ -95,16 +95,18 @@ const Index = ({ posts }) => {
           </p>
 
           <p>
-            Follow me on:{" "}
-            <a target="_blank" href="https://twitter.com/KameronTanseli">
-              Twitter
-            </a>
-            {" "}|{" "}
-            <a
-              target="_blank"
-              href="https://www.producthunt.com/@kameron_tanseli"
-            >
-              ProductHunt
+            Book a time to chat with me about:
+          </p>
+          <ul>
+            <li>Growth engineering team design</li>
+            <li>Growth engineering hiring</li>
+            <li>Finding leading metrics to drive activation</li>
+            <li>PLG &amp; Monetizing self-serve traffic</li>
+            <li>Advice on experimentation and agentic ops</li>
+          </ul>
+          <p>
+            <a target="_blank" href="https://cal.com/kameron-tanseli-bmqaam">
+              Book time with me
             </a>
           </p>
         </div>
