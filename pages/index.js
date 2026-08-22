@@ -178,10 +178,6 @@ const Index = ({ posts }) => {
         </div>
       </div>
       <div className="tools">
-        <a target="_blank" href="https://trycurlup.com"><p>trycurlup.com</p></a>
-        <p>
-          A hosted dashboard for your agents to visualise anything.
-        </p>
         <a target="_blank" href="https://leananalyticscanvas.com"><p>leananalyticscanvas.com</p></a>
         <p>
           Plan out your next business idea with a free online business canvas planner.
